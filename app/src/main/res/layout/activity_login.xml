@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.vishant.DentalJobVideo.activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/login_header_text"
+        android:text="@string/login_text"
+        style="@style/activity_header_text"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:spinnerMode="dialog"
+        android:id="@+id/login_user_type"
+        style="@style/login_spinner"
+        android:prompt="@string/login_spinner_text"
+        android:layout_below="@id/login_header_text"
+        android:background="@mipmap/dropdown_text_feild"
+        android:layout_marginTop="@dimen/login_type_select_topmargin">
+
+    </android.support.v7.widget.AppCompatSpinner>
+
+    <EditText
+        android:id="@+id/login_user_name"
+        style="@style/login_fields"
+        android:background="@mipmap/text_field"
+        android:layout_marginTop="@dimen/login_username_topmargin"
+        android:layout_below="@id/login_user_type"
+        android:hint="@string/login_username_hint"/>
+
+    <EditText
+        android:id="@+id/login_user_password"
+        style="@style/login_fields"
+        android:background="@mipmap/text_field"
+        android:layout_marginTop="@dimen/login_username_topmargin"
+        android:inputType="textPassword"
+        android:layout_below="@id/login_user_name"
+        android:hint="@string/login_password_hint" />
+
+    <TextView
+        android:id="@+id/login_forget_password"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/login_forgot_password_topmargin"
+        android:layout_marginRight="@dimen/login_field_margin"
+        android:text="@string/login_forget_password"
+        android:textSize="@dimen/login_remember_me_text_size"
+        android:layout_below="@id/login_user_password"
+
+        android:textColor="@color/login_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/login_remember_me_checkbox"
+        android:text="@string/login_remember_me"
+        android:textColor="@color/login_text_color"
+        android:paddingLeft="@dimen/login_remember_me_text_left_margin"
+        android:layout_marginLeft="@dimen/login_field_margin"
+        android:checked="false"
+        android:layout_below="@+id/login_forget_password"
+        android:button="@drawable/login_remember_me_checkbox"
+        android:textSize="@dimen/login_remember_me_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/login_remember_me_button_size" />
+
+    <Button
+        android:id="@+id/login_sign_in_btn"
+        android:layout_below="@id/login_remember_me_checkbox"
+        android:layout_marginTop="@dimen/login_sign_in_button_top_margin"
+        android:background="@mipmap/sign_in_button"
+        style="@style/login_buttons"/>
+
+    <Button
+        android:id="@+id/login_sign_up_btn"
+        android:layout_below="@id/login_sign_in_btn"
+        android:layout_marginTop="@dimen/login_sign_up_button_top_margin"
+        android:background="@mipmap/sign_up_button"
+        style="@style/login_buttons"/>
+
+    <Button
+        android:id="@+id/login_facebook_connect_btn"
+        android:layout_below="@id/login_sign_up_btn"
+        android:layout_marginTop="@dimen/login_sign_up_button_top_margin"
+        android:background="@mipmap/facebook_login"
+        style="@style/login_buttons"/>
+
+
+
+</RelativeLayout>

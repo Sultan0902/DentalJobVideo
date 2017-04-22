@@ -1,0 +1,564 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--header-->
+    <dimen name="header_textsize">20dp</dimen>
+    <dimen name="header_next_textsize">18dp</dimen>
+    <dimen name="header_next_height">18dp</dimen>
+    <dimen name="header_next_width">32dp</dimen>
+    <dimen name="header_text_topmargin">31dp</dimen>
+    <dimen name="header_layout_topmargin">15dp</dimen>
+    <dimen name="header_layout_height">33dp</dimen>
+    <dimen name="header_layout_total_height">56dp</dimen>
+    <dimen name="header_padding">9dp</dimen>
+    <!--navigation drawer-->
+
+    <dimen name="nav_drawer_item_height">45dp</dimen>
+    <dimen name="nav_drawer_item_text_size">16dp</dimen>
+    <dimen name="nav_drawer_header_height">219dp</dimen>
+    <dimen name="header_add_icon_size">27dp</dimen>
+    <dimen name="header_text_right_margin">35dp</dimen>
+    <dimen name="header_layout_backbutton_size">30dp</dimen>
+
+
+    <!--Login-->
+    <dimen name="login_header_textsize">20dp</dimen>
+    <dimen name="login_text_topmargin">31dp</dimen>
+    <dimen name="login_type_select_topmargin">48dp</dimen>
+    <dimen name="login_field_textsize">16dp</dimen>
+    <dimen name="login_username_topmargin">25dp</dimen>
+    <dimen name="login_password_topmargin">25dp</dimen>
+    <dimen name="login_forgot_password_topmargin">12dp</dimen>
+    <dimen name="login_remember_me_button_size">35dp</dimen>
+    <dimen name="login_field_height">43dp</dimen>
+    <dimen name="login_field_left_padding">12dp</dimen>
+    <dimen name="login_button_height">48dp</dimen>
+    <dimen name="login_field_margin">30dp</dimen>
+    <dimen name="login_remember_me_text_size">15dp</dimen>
+    <dimen name="login_forget_password_text_size">15dp</dimen>
+    <dimen name="login_sign_in_button_top_margin">27dp</dimen>
+    <dimen name="login_sign_up_button_top_margin">18dp</dimen>
+    <dimen name="login_remember_me_text_left_margin">6dp</dimen>
+
+    <!--SignUp-->
+    <dimen name="signup_account_type_topmargin">48dp</dimen>
+    <dimen name="signup_sign_up_button_top_margin">23dp</dimen>
+    <dimen name="signup_image_top_margin">20dp</dimen>
+    <dimen name="signup_image_size">101dp</dimen>
+    <dimen name="signup_image_padding">5.3dp</dimen>
+    <dimen name="signup_half_field_margin">5dp</dimen>
+    <dimen name="signup_field_size">43dp</dimen>
+    <dimen name="signup_field_large_size">78dp</dimen>
+    <dimen name="signup_field_large_toppadding">11dp</dimen>
+    <dimen name="signup_button_size">48dp</dimen>
+    <dimen name="signup_field_margin">30dp</dimen>
+    <dimen name="signup_field_leftmargin">13dp</dimen>
+    <dimen name="signup_field_textsize">16dp</dimen>
+    <dimen name="signup_username_topmargin">64dp</dimen>
+    <dimen name="signup_field_topmargin">17dp</dimen>
+    <dimen name="signup_field_bottommargin">25dp</dimen>
+    <dimen name="signup_button_topmargin">28dp</dimen>
+
+    <!--Dashboard-->
+    <dimen name="dashboard_header_textsize">20dp</dimen>
+    <dimen name="dashboard_text_topmargin">24dp</dimen>
+    <dimen name="dashboard_logo_topmargin">41dp</dimen>
+    <dimen name="dashboard_logo_height">87dp</dimen>
+    <dimen name="dashboard_logo_leftmargin">58dp</dimen>
+    <dimen name="dashboard_logo_rightmargin">46dp</dimen>
+    <dimen name="dashboard_menu_leftmargin">33dp</dimen>
+    <dimen name="dashboard_menu_rightmargin">33dp</dimen>
+    <dimen name="dashboard_menu_topmargin">35dp</dimen>
+    <dimen name="dashboard_menu_icon_width">115dp</dimen>
+    <dimen name="dashboard_menu_width">295dp</dimen>
+    <dimen name="dashboard_menu_icon_height">97dp</dimen>
+    <dimen name="dashboard_menu_manage_video_top_margin">53dp</dimen>
+    <dimen name="dashboard_menu_myjobs_top_margin">8dp</dimen>
+
+    <!--SignUp JobSeeker-->
+
+    <!--SignUp Employeer-->
+
+    <!-- Company Profile Fragment-->
+    <dimen name="company_profile_header_info_topmargin">35dp</dimen>
+    <dimen name="company_profile_header_info_height">80dp</dimen>
+    <dimen name="company_profile_header_profilepicture_topmargin">7dp</dimen>
+    <dimen name="company_profile_header_profilePicture_height">66dp</dimen>
+    <dimen name="company_profile_header_profilePicture_width">66dp</dimen>
+    <dimen name="company_profile_header_layout_leftmargin">10dp</dimen>
+    <dimen name="company_profile_header_layout_rightmargin">15dp</dimen>
+    <dimen name="company_profile_header_layout_public_button_size">26dp</dimen>
+    <dimen name="company_profile_header_company_name_text_size">19dp</dimen>
+    <dimen name="company_profile_header_company_name_topmargin">7dp</dimen>
+    <dimen name="company_profile_header_company_desc_topmargin">5dp</dimen>
+    <dimen name="company_profile_header_company_name_leftmargin">14dp</dimen>
+    <dimen name="company_profile_header_company_name_rightmargin">14dp</dimen>
+    <dimen name="company_profile_header_company_desc_text_size">13dp</dimen>
+    <dimen name="company_profile_fields_text_size">14dp</dimen>
+    <dimen name="company_profile_fields_margin">20dp</dimen>
+    <dimen name="company_profile_fields_topmargin">11dp</dimen>
+    <dimen name="company_profile_fields_height">33dp</dimen>
+
+    <!--Employer Jobs Fragment-->
+    <dimen name="fragment_employer_job_button_height">49dp</dimen>
+    <dimen name="fragment_employer_job_button_leftmargin">26dp</dimen>
+    <dimen name="fragment_employer_job_button_topmargin">19dp</dimen>
+
+    <!--Employer Job Fragment -->
+
+    <dimen name="employer_job_rv_item_size">135dp</dimen>
+    <dimen name="employer_job_rv_topmargin">7dp</dimen>
+    <dimen name="employer_job_rv_bottommargin">7dp</dimen>
+    <dimen name="employer_job_bar_top_margin">20dp</dimen>
+    <dimen name="employer_job_rv_item_image_size">90dp</dimen>
+    <dimen name="employer_job_rv_item_image_leftmargin">10dp</dimen>
+    <dimen name="employer_job_rv_item_title_textsize">19dp</dimen>
+    <dimen name="employer_job_rv_item_detail_textsize">13dp</dimen>
+    <dimen name="employer_job_rv_item_detail_leftmargin">17dp</dimen>
+    <dimen name="employer_job_rv_item_title_topmargin">30dp</dimen>
+    <dimen name="employer_job_searchbar_height">42dp</dimen>
+    <dimen name="employer_job_searchbar_leftpadding">11dp</dimen>
+    <dimen name="employer_job_searchbar_rightpadding">11dp</dimen>
+    <dimen name="employer_job_searchbar_margin">7dp</dimen>
+    <dimen name="employer_job_searchbar_rightmargin">50dp</dimen>
+    <dimen name="employer_job_searchbar_hint_textsize">20dp</dimen>
+    <dimen name="employer_job_searchbar_textsize">20dp</dimen>
+    <dimen name="employer_job_filter_textsize">16dp</dimen>
+    <dimen name="employer_job_options_height">28dp</dimen>
+    <dimen name="employer_job_searchbar_icon_size">17dp</dimen>
+
+
+    <!--Activity Post Video Job-->
+
+    <dimen name="activity_post_video_job_info_layout_topmargin">15dp</dimen>
+    <dimen name="activity_post_video_job_info_layout_toppadding">16dp</dimen>
+    <dimen name="activity_post_video_job_info_layout_bottompadding">15dp</dimen>
+    <dimen name="activity_post_video_job_info_image_size">65dp</dimen>
+    <dimen name="activity_post_video_job_info_textfield_padding">20dp</dimen>
+    <dimen name="activity_post_video_job_info_textfield_toppadding">8dp</dimen>
+    <dimen name="activity_post_video_job_info_title_field_topmargin">17dp</dimen>
+    <dimen name="activity_post_video_job_info_desc_field_topmargin">10dp</dimen>
+    <dimen name="activity_post_video_job_info_layout_margin">17dp</dimen>
+    <dimen name="activity_post_video_job_info_category_field_topmargin">17dp</dimen>
+    <dimen name="activity_post_video_job_info_desc_field_height">60dp</dimen>
+    <dimen name="activity_post_video_job_info_title_field_textsize">16dp</dimen>
+    <dimen name="activity_post_video_job_info_title_text_leftmargin">13dp</dimen>
+    <dimen name="activity_post_video_job_info_title_text_rightmargin">6dp</dimen>
+    <dimen name="activity_post_video_job_info_category_field_textsize">20dp</dimen>
+    <dimen name="activity_post_video_job_info_title_field_height">28dp</dimen>
+    <dimen name="activity_post_video_job_info_category_field_height">42dp</dimen>
+    <dimen name="activity_post_video_job_videoview_play_icon">75dp</dimen>
+    <dimen name="activity_post_video_job_videoview_topmargin">22dp</dimen>
+    <dimen name="activity_post_video_job_videoview_height">270dp</dimen>
+    <dimen name="activity_post_video_job_videoview_bottommargin">42dp</dimen>
+
+    <!--Employer Post text Job Activity-->
+
+    <dimen name="activity_post_text_job_info_layout_topmargin">15dp</dimen>
+    <dimen name="activity_post_text_job_info_layout_toppadding">10dp</dimen>
+    <dimen name="activity_post_text_job_info_layout_height">164dp</dimen>
+    <dimen name="activity_post_text_job_info_layout_bottompadding">10dp</dimen>
+    <dimen name="activity_post_text_job_info_image_size">61dp</dimen>
+    <dimen name="activity_post_text_job_info_textfield_padding">19dp</dimen>
+    <dimen name="activity_post_text_job_info_textfield_toppadding">6dp</dimen>
+    <dimen name="activity_post_text_job_info_title_field_topmargin">17dp</dimen>
+    <dimen name="activity_post_text_job_info_desc_field_topmargin">8dp</dimen>
+    <dimen name="activity_post_text_job_info_layout_margin">19dp</dimen>
+    <dimen name="activity_post_text_job_info_desc_field_height">60dp</dimen>
+    <dimen name="activity_post_text_job_info_title_field_textsize">16dp</dimen>
+    <dimen name="activity_post_text_job_info_title_text_leftmargin">12dp</dimen>
+    <dimen name="activity_post_text_job_info_title_text_rightmargin">6dp</dimen>
+    <dimen name="activity_post_text_job_info_category_field_textsize">16dp</dimen>
+    <dimen name="activity_post_text_job_info_title_field_height">28dp</dimen>
+    <dimen name="activity_post_text_input_field_height">42dp</dimen>
+    <dimen name="activity_post_text_input_field_margin">28dp</dimen>
+    <dimen name="activity_post_text_input_field_textsize">16dp</dimen>
+    <dimen name="activity_post_text_input_field_padding">17dp</dimen>
+    <dimen name="activity_post_text_input_field_topmargin">20dp</dimen>
+
+    <!--Posted Job Employeer Activity-->
+    <dimen name="acitivity_posted_job_employeer_rv_top_padding">17dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_top_padding">9dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_hieght">88dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_rating_rightmargin">60dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_rating_topmargin">14dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_rating_icon_margin">3dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_rating_icon_size">16dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_rating_width">100dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_image_width">70dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_image_height">70dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_image_leftmargin">7dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_detail_title_topmargin">18dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_detail_desc_topmargin">3dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_detail_text_size">13dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_item_detail_leftmargin">12dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_rv_bottommargin">8dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_image_size">90dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_name_textsize">19dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_name_topmargin">17dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_name_margin">18dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_image_top_margin">18dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_info_margin">15dp</dimen>
+
+    <dimen name="acitivity_posted_job_employeer_info_desc_topmargin">2dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_description_textsize">15dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_description_field_topmargin">13dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_description_field_left_margin">15dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_description_field_right_margin">9dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_description_field_height">32dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_description_field_right_width">76dp</dimen>
+    <dimen name="acitivity_posted_job_employeer_description_leftmargin">18dp</dimen>
+
+    <!--Posted Job Video Employeer Activity-->
+    <dimen name="acitivity_posted_job_video_employeer_name_topmargin">18dp</dimen>
+    <dimen name="acitivity_posted_job_video_employeer_experience_textsize">11dp</dimen>
+    <dimen name="acitivity_posted_job_video_employeer_videoview_topmargin">10dp</dimen>
+    <dimen name="acitivity_posted_job_video_employeer_videoview_height">225dp</dimen>
+    <dimen name="acitivity_posted_job_video_employeer_playbutton_size">74dp</dimen>
+
+    <!--EMPLOYER JOB SEEKER FRAGMENT-->
+    <!--RecyclerView Item-->
+    <dimen name="fragment_jobseeker_rv_top_margin">18dp</dimen>
+    <dimen name="fragment_jobseeker_rv_item_bottompadding">10dp</dimen>
+    <dimen name="fragment_jobseeker_rv_item_hieght">100dp</dimen>
+    <dimen name="fragment_jobseeker_rv_item_image_width">73dp</dimen>
+    <dimen name="fragment_jobseeker_rv_item_image_height">73dp</dimen>
+    <dimen name="fragment_jobseeker_rv_item_image_leftmargin">6dp</dimen>
+    <dimen name="fragment_jobseeker_rv_item_detail_title_topmargin">21dp</dimen>
+    <dimen name="fragment_jobseeker_rv_item_detail_desc_topmargin">2dp</dimen>
+    <dimen name="fragment_jobseeker_rv_item_name_text_size">15dp</dimen>
+    <dimen name="fragment_jobseeker_rv_item_detail_text_size">13dp</dimen>
+    <dimen name="fragment_jobseeker_rv_item_detail_leftmargin">8dp</dimen>
+    <dimen name="fragment_jobseeker_rv_item_detail_rightmargin">20dp</dimen>
+    <dimen name="fragment_jobseeker_rv_item_detail_image_padding">4.5dp</dimen>
+    <dimen name="fragment_jobseeker_rv_bottommargin">8dp</dimen>
+
+
+    <!--EMPLOYER MANAGE VIDEOS FRAGMENT-->
+    <!--RecyclerView Item-->
+    <dimen name="manage_video_rv_top_margin">0dp</dimen>
+    <dimen name="manage_video_rv_height">120dp</dimen>
+    <dimen name="manage_video_rv_topmargin">20dp</dimen>
+    <dimen name="manage_video_rv_margin">44dp</dimen>
+    <dimen name="manage_video_rv_item_topmargin">8dp</dimen>
+    <dimen name="manage_video_rv_item_cross_rightmargin">-8dp</dimen>
+    <dimen name="manage_video_rv_item_width">79dp</dimen>
+    <dimen name="manage_video_rv_item_hieght">70dp</dimen>
+    <dimen name="manage_video_rv_item_cross_width">21dp</dimen>
+    <dimen name="manage_video_rv_item_cross_height">21dp</dimen>
+    <dimen name="manage_video_rv_item_scroll_width">30dp</dimen>
+    <dimen name="manage_video_rv_item_scroll_height">30dp</dimen>
+    <dimen name="manage_video_rv_item_scroll_internal_margin">4dp</dimen>
+    <dimen name="manage_video_rv_item_scroll_margin">10dp</dimen>
+    <dimen name="manage_video_rv_item_scroll_bottommargin">40dp</dimen>
+    <dimen name="manage_video_rv_item_play_width">38dp</dimen>
+    <dimen name="manage_video_rv_item_play_height">38dp</dimen>
+    <dimen name="manage_video_rv_item_margin">3dp</dimen>
+    <!--View-->
+    <dimen name="manage_video_videoview_topmargin">0dp</dimen>
+    <dimen name="manage_video_videoview_height">250dp</dimen>
+    <dimen name="manage_video_video_play_icon_height">74dp</dimen>
+    <dimen name="manage_video_button_height">43dp</dimen>
+    <dimen name="manage_video_button_topmargin">16dp</dimen>
+    <dimen name="manage_video_button_margin">33dp</dimen>
+
+    <!--Top 5 fragment-->
+    <dimen name="fragment_top5_employeer_rv_top_padding">17.5dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_top_padding">9dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_hieght">101dp</dimen>
+    <dimen name="afragment_top5_employeer_rv_item_rating_rightmargin">36.5dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_rating_topmargin">7dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_rating_icon_margin">3dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_rating_icon_size">16dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_rating_width">100dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_image_width">80dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_image_height">75dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_image_leftmargin">13dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_detail_title_topmargin">24dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_detail_desc_topmargin">4dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_title_text_size">15.5dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_detail_text_size">12dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_item_detail_leftmargin">7.5dp</dimen>
+    <dimen name="fragment_top5_employeer_rv_bottommargin">8dp</dimen>
+
+    <!--Activity Top 5 profile-->
+    <dimen name="activity_top5profile_employeer_info_layout_height">120dp</dimen>
+    <dimen name="activity_top5profile_employeer_info_layout_margin">16dp</dimen>
+    <dimen name="activity_top5profile_employeer_info_image_height">80dp</dimen>
+    <dimen name="activity_top5profile_employeer_info_image_width">88dp</dimen>
+    <dimen name="activity_top5profile_employeer_info_title_textsize">16dp</dimen>
+    <dimen name="activity_top5profile_employeer_info_title_topmargin">35dp</dimen>
+    <dimen name="activity_top5profile_employeer_info_detail_textsize">13dp</dimen>
+    <dimen name="activity_top5profile_employeer_info_detail_leftmargin">10dp</dimen>
+    <dimen name="activity_top5profile_employeer_info_detail_topmargin">4dp</dimen>
+    <dimen name="activity_top5profile_employeer_info_experience_textsize">12dp</dimen>
+    <dimen name="activity_top5profile_employeer_info_rating_height">16dp</dimen>
+    <dimen name="activity_top5profile_employeer_info_rating_rightmargin">24dp</dimen>
+    <dimen name="activity_top5profile_employeer_info_rating_topmargin">20dp</dimen>
+    <dimen name="activity_top5profile_employeer_icon_layout_height">61dp</dimen>
+    <dimen name="activity_top5profile_employeer_icon_layout_margin">50dp</dimen>
+    <dimen name="activity_top5profile_employeer_icons_height">40dp</dimen>
+    <dimen name="activity_top5profile_employeer_icons_smallwidth">32dp</dimen>
+    <dimen name="activity_top5profile_employeer_icons_mediumwidth">35dp</dimen>
+    <dimen name="activity_top5profile_employeer_icon_leftmargin">20dp</dimen>
+    <dimen name="activity_top5profile_employeer_icons_largewidth">42dp</dimen>
+
+    <dimen name="activity_top5profile_employeer_icons_hiddenwidth">45dp</dimen>
+    <dimen name="activity_top5profile_employeer_videoview_height">256dp</dimen>
+    <dimen name="activity_top5profile_employeer_playbtn_height">73dp</dimen>
+
+    <!-- Settings Fragment-->
+    <dimen name="fragment_settings_employeer_item_height">45dp</dimen>
+    <dimen name="fragment_settings_employeer_item_icon_size">25dp</dimen>
+    <dimen name="fragment_settings_employeer_item_icon_left_margin">14dp</dimen>
+    <dimen name="fragment_settings_employeer_item_title_left_margin">13.5dp</dimen>
+    <dimen name="fragment_settings_employeer_item_title_text_size">16dp</dimen>
+    <dimen name="fragment_settings_employeer_item_border_size">1dp</dimen>
+
+    <!-- Notifications Activity -->
+    <!-- Notification Item-->
+
+    <dimen name="notification_activity_notification_rv_topmargin">19dp</dimen>
+    <dimen name="notification_activity_notification_item_height">101dp</dimen>
+    <dimen name="notification_activity_notification_item_name_topmargin">22dp</dimen>
+    <dimen name="notification_activity_notification_item_name_textsize">19dp</dimen>
+    <dimen name="notification_activity_notification_item_text_leftmargin">26dp</dimen>
+    <dimen name="notification_activity_notification_item_text_rightmargin">26dp</dimen>
+    <dimen name="notification_activity_notification_item_text_textsize">14dp</dimen>
+    <dimen name="notification_activity_notification_item_text_topmargin">2dp</dimen>
+    <dimen name="notification_activity_notification_item_time_rightmargin">33dp</dimen>
+    <dimen name="notification_activity_notification_item_time_topmargin">11dp</dimen>
+    <dimen name="notification_activity_notification_item_time_textsize">16dp</dimen>
+
+
+    <!--Cnange Password Dialog-->
+    <dimen name="change_password_dialog_height">280dp</dimen>
+    <dimen name="change_password_dialog_width">300dp</dimen>
+    <dimen name="change_password_header_topmargin">30dp</dimen>
+    <dimen name="change_password_header_text_size">19dp</dimen>
+    <dimen name="change_password_field_text_size">16dp</dimen>
+    <dimen name="change_password_field_height">35dp</dimen>
+    <dimen name="change_password_button_text_size">19dp</dimen>
+    <dimen name="change_password_button_height">42dp</dimen>
+    <dimen name="change_password_button_width">150dp</dimen>
+    <dimen name="change_password_field_margin">25dp</dimen>
+    <dimen name="change_password_field_padding">7dp</dimen>
+    <dimen name="change_password_field_topmargin">20dp</dimen>
+
+    <!--Forget Password Dialog-->
+    <dimen name="forget_password_dialog_height">240dp</dimen>
+    <dimen name="forget_password_dialog_width">300dp</dimen>
+    <dimen name="forget_password_header_topmargin">30dp</dimen>
+    <dimen name="forget_password_header_text_size">19dp</dimen>
+    <dimen name="forget_password_text_size">19dp</dimen>
+    <dimen name="forget_password_text_topmargin">19dp</dimen>
+    <dimen name="forget_password_field_text_size">16dp</dimen>
+    <dimen name="forget_password_field_height">35dp</dimen>
+    <dimen name="forget_password_button_text_size">19dp</dimen>
+    <dimen name="forget_password_button_height">42dp</dimen>
+    <dimen name="forget_password_button_width">150dp</dimen>
+    <dimen name="forget_password_field_margin">25dp</dimen>
+    <dimen name="forget_password_field_padding">7dp</dimen>
+    <dimen name="forget_password_field_topmargin">20dp</dimen>
+
+    <!-- Add Note Dialog-->
+    <dimen name="add_note_dialog_height">240dp</dimen>
+    <dimen name="add_note_dialog_width">300dp</dimen>
+    <dimen name="add_note_dialog_header_topmargin">30dp</dimen>
+    <dimen name="add_note_dialog_header_textsize">19dp</dimen>
+    <dimen name="add_note_dialog_header_seperator_topmargin">20dp</dimen>
+    <dimen name="add_note_dialog_detail_textsize">16dp</dimen>
+    <dimen name="add_note_cancel_button_margin">7dp</dimen>
+    <dimen name="add_note_bottom_margin">20dp</dimen>
+    <dimen name="add_note_dialog_detail_margin">12dp</dimen>
+    <dimen name="add_note_dialog_detail_height">100dp</dimen>
+    <dimen name="add_note_dialog_done_textSize">16dp</dimen>
+    <dimen name="add_note_dialog_delete_button_size">25dp</dimen>
+    <dimen name="add_note_dialog_cancel_button_size">21dp</dimen>
+
+    <!--Job Seeker Job Search Fragment -->
+
+    <dimen name="job_search_rv_item_size">130dp</dimen>
+    <dimen name="job_search_bar_top_margin">20dp</dimen>
+    <dimen name="job_search_rv_topmargin">7dp</dimen>
+    <dimen name="job_search_rv_item_image_size">90dp</dimen>
+    <dimen name="job_search_rv_item_image_leftmargin">10dp</dimen>
+    <dimen name="job_search_rv_item_title_textsize">19dp</dimen>
+    <dimen name="job_search_rv_item_detail_textsize">13dp</dimen>
+    <dimen name="job_search_rv_item_timeago_textsize">15dp</dimen>
+    <dimen name="job_search_rv_item_timeago_margin">12dp</dimen>
+    <dimen name="job_search_rv_item_detail_leftmargin">17dp</dimen>
+    <dimen name="job_search_rv_item_title_topmargin">28dp</dimen>
+    <dimen name="job_search_searchbar_height">42dp</dimen>
+    <dimen name="job_search_searchbar_leftpadding">11dp</dimen>
+    <dimen name="job_search_searchbar_rightpadding">11dp</dimen>
+    <dimen name="job_search_searchbar_margin">7dp</dimen>
+    <dimen name="job_search_searchbar_rightmargin">50dp</dimen>
+    <dimen name="job_search_searchbar_hint_textsize">20dp</dimen>
+    <dimen name="job_search_searchbar_textsize">20dp</dimen>
+    <dimen name="job_search_filter_textsize">16dp</dimen>
+    <dimen name="job_search_options_height">28dp</dimen>
+    <dimen name="job_search_searchbar_icon_size">17dp</dimen>
+
+
+    <!--Job Detail Acitivity-->
+    <dimen name="job_detail_info_layout_height">175dp</dimen>
+    <dimen name="job_detail_text_info_layout_height">155dp</dimen>
+    <dimen name="job_detail_icons_rightmargin">17dp</dimen>
+    <dimen name="job_detail_icons_topmargin">32dp</dimen>
+    <dimen name="job_detail_icon_margin">16dp</dimen>
+    <dimen name="job_detail_icon_employer_icon_width">30dp</dimen>
+    <dimen name="job_detail_icon_notes_icon_width">25dp</dimen>
+    <dimen name="job_detail_icon_save_icon_width">24dp</dimen>
+    <dimen name="job_detail_icon_hide_icon_width">36dp</dimen>
+    <dimen name="job_detail_icons_height">27dp</dimen>
+    <dimen name="job_detail_image_size">90dp</dimen>
+    <dimen name="job_detail_image_topmargin">55dp</dimen>
+    <dimen name="job_detail_image_leftmargin">13dp</dimen>
+    <dimen name="job_detail_title_topmargin">72dp</dimen>
+    <dimen name="job_detail_title_textsize">19dp</dimen>
+    <dimen name="job_detail_detail_textsize">13dp</dimen>
+    <dimen name="job_detail_detail_margin">19dp</dimen>
+    <dimen name="job_detail_videoview_height">230dp</dimen>
+    <dimen name="job_detail_videoview_play_icon_size">73dp</dimen>
+    <dimen name="job_detail_apply_button_height">42dp</dimen>
+    <dimen name="job_detail_apply_button_topmargin">20dp</dimen>
+    <dimen name="job_detail_apply_button_margin">30dp</dimen>
+
+    <!--Apply job dialog-->
+    <dimen name="apply_job_dialog_width">256dp</dimen>
+    <dimen name="apply_job_dialog_height">158dp</dimen>
+
+
+    <!--Job Seeker View Profile Fragment-->
+    <dimen name="view_profile_job_seeker_info_layout_height">109dp</dimen>
+    <dimen name="view_profile_job_seeker_info_image_size">76dp</dimen>
+    <dimen name="view_profile_job_seeker_info_leftmargin">12dp</dimen>
+    <dimen name="view_profile_job_seeker_info_icons_topmargin">10dp</dimen>
+    <dimen name="view_profile_job_seeker_info_icons_rightmargin">17dp</dimen>
+    <dimen name="view_profile_job_seeker_info_icons_height">26dp</dimen>
+    <dimen name="view_profile_job_seeker_info_icons_margin">16dp</dimen>
+    <dimen name="view_profile_job_seeker_info_icons_online_icon_width">28dp</dimen>
+    <dimen name="view_profile_job_seeker_info_icons_public_icon_width">25dp</dimen>
+    <dimen name="view_profile_job_seeker_info_title_topmargin">25dp</dimen>
+    <dimen name="view_profile_job_seeker_info_title_textsize">19dp</dimen>
+    <dimen name="view_profile_job_seeker_info_details_textsize">15dp</dimen>
+    <dimen name="view_profile_job_seeker_info_title_leftmargin">24dp</dimen>
+    <!--contact-->
+    <dimen name="view_profile_job_seeker_details_heading_height">28dp</dimen>
+    <dimen name="view_profile_job_seeker_details_text_leftmargin">23dp</dimen>
+    <dimen name="view_profile_job_seeker_details_edittext_leftmargin">12dp</dimen>
+    <dimen name="view_profile_job_seeker_details_heading_textsize">17dp</dimen>
+    <dimen name="view_profile_job_seeker_details_detail_layout_height">30dp</dimen>
+    <dimen name="view_profile_job_seeker_details_phone_layout_height">25dp</dimen>
+    <dimen name="view_profile_job_seeker_details_address_layout_height">25dp</dimen>
+    <dimen name="view_profile_job_seeker_details_email_layout_bottompadding">6dp</dimen>
+    <dimen name="view_profile_job_seeker_details_edit_iconsize">17dp</dimen>
+    <dimen name="view_profile_job_seeker_details_edit_rightmargin">17dp</dimen>
+    <dimen name="view_profile_job_seeker_details_detail_textsize">15dp</dimen>
+    <dimen name="view_profile_job_seeker_details_seperator_height">1dp</dimen>
+    <!--professional skills-->
+    <dimen name="view_profile_job_seeker_professional_skills_right_margin">51dp</dimen>
+    <dimen name="view_profile_job_seeker_professional_skills_padding">5dp</dimen>
+
+
+    <!--Objectives-->
+    <dimen name="view_profile_job_seeker_objectives_editicon_topmargin">7dp</dimen>
+
+    <!--Expererience-->
+    <dimen name="view_profile_job_seeker_experience_editicon_topmargin">9dp</dimen>
+
+    <!--Education-->
+    <dimen name="view_profile_job_seeker_education_text_topmargin">10dp</dimen>
+    <dimen name="view_profile_job_seeker_education_text_bottommargin">10dp</dimen>
+    <dimen name="view_profile_job_seeker_education_editicon_topmargin">6dp</dimen>
+
+    <!--Professional Skills Activity-->
+    <dimen name="activity_prof_skills_title_textsize">19dp</dimen>
+    <dimen name="activity_prof_skills_field_textsize">16dp</dimen>
+    <dimen name="activity_prof_skills_title_topmargin">20dp</dimen>
+    <dimen name="activity_prof_skills_field_topmargin">24.5dp</dimen>
+    <dimen name="activity_prof_skills_button_topmargin">27dp</dimen>
+    <dimen name="activity_prof_skills_button_height">48dp</dimen>
+    <dimen name="activity_prof_skills_field_margin">33dp</dimen>
+    <dimen name="activity_prof_skills_field_height">43dp</dimen>
+
+    <!--Objectives Activity-->
+    <dimen name="activity_objectives_title_textsize">19dp</dimen>
+    <dimen name="activity_objectives_field_textsize">16dp</dimen>
+    <dimen name="activity_objectives_title_topmargin">20dp</dimen>
+    <dimen name="activity_objectives_field_topmargin">24.5dp</dimen>
+    <dimen name="activity_objectives_button_topmargin">27dp</dimen>
+    <dimen name="activity_objectives_button_height">48dp</dimen>
+    <dimen name="activity_objectives_field_margin">33dp</dimen>
+    <dimen name="activity_objectives_field_height">43dp</dimen>
+
+    <!--Education Activity-->
+    <dimen name="activity_education_title_textsize">19dp</dimen>
+    <dimen name="activity_education_field_textsize">16dp</dimen>
+    <dimen name="activity_education_title_topmargin">20dp</dimen>
+    <dimen name="activity_education_field_topmargin">24.5dp</dimen>
+    <dimen name="activity_education_button_topmargin">27dp</dimen>
+    <dimen name="activity_education_button_height">43dp</dimen>
+    <dimen name="activity_education_field_margin">33dp</dimen>
+    <dimen name="activity_education_field_height">43dp</dimen>
+    <dimen name="activity_education_yearfield_margin">5dp</dimen>
+
+    <!--Experience Activity-->
+    <dimen name="activity_experience_title_textsize">19dp</dimen>
+    <dimen name="activity_experience_field_textsize">16dp</dimen>
+    <dimen name="activity_experience_title_topmargin">20dp</dimen>
+    <dimen name="activity_experience_field_topmargin">24.5dp</dimen>
+    <dimen name="activity_experience_button_topmargin">27dp</dimen>
+    <dimen name="activity_experience_button_height">43dp</dimen>
+    <dimen name="activity_experience_field_margin">33dp</dimen>
+    <dimen name="activity_experience_field_height">43dp</dimen>
+    <dimen name="activity_experience_yearfield_margin">5dp</dimen>
+    <dimen name="activity_experience_switch_width">100dp</dimen>
+    <dimen name="activity_experience_desc_height">78dp</dimen>
+
+
+    <!--Dialog Job Search Radius Filter-->
+
+    <dimen name="dialog_job_search_radius_width">300dp</dimen>
+    <dimen name="dialog_job_search_radius_height">190dp</dimen>
+    <dimen name="dialog_job_search_radius_margin">20dp</dimen>
+    <dimen name="dialog_job_search_radius_topmargin">20dp</dimen>
+    <dimen name="dialog_job_search_radius_detail_topmargin">20dp</dimen>
+    <dimen name="dialog_job_search_radius_header_textsize">19dp</dimen>
+    <dimen name="dialog_job_search_radius_detail_textsize">16dp</dimen>
+    <dimen name="dialog_job_search_radius_button_height">42dp</dimen>
+
+    <!--Job Seeker Details Activity-->
+    <dimen name="activity_jobseeker_details_height">140dp</dimen>
+    <dimen name="activity_jobseeker_details_topmargin">15dp</dimen>
+    <dimen name="activity_jobseeker_details_image_size">100dp</dimen>
+    <dimen name="activity_jobseeker_details_info_margin">20dp</dimen>
+    <dimen name="activity_jobseeker_details_title_topmargin">36dp</dimen>
+    <dimen name="activity_jobseeker_details_title_margin">12dp</dimen>
+    <dimen name="activity_jobseeker_details_detail_topmargin">5dp</dimen>
+    <dimen name="activity_jobseeker_details_title_textsize">19dp</dimen>
+    <dimen name="activity_jobseeker_details_detail_textsize">16dp</dimen>
+    <dimen name="activity_jobseeker_info_details_textsize">17dp</dimen>
+    <dimen name="activity_jobseeker_details_icon_layout_height">70dp</dimen>
+    <dimen name="activity_jobseeker_details_seperator_height">1dp</dimen>
+    <dimen name="activity_jobseeker_details_icon_layout_margin">50dp</dimen>
+    <dimen name="activity_jobseeker_details_icons_smallheight">38dp</dimen>
+    <dimen name="activity_jobseeker_details_icons_mediumheight">42dp</dimen>
+    <dimen name="activity_jobseeker_details_icons_largeheight">46dp</dimen>
+    <dimen name="activity_jobseeker_details_icons_smallwidth">38dp</dimen>
+    <dimen name="activity_jobseeker_details_icons_mediumwidth">42dp</dimen>
+    <dimen name="activity_jobseeker_details_icon_leftmargin">25dp</dimen>
+    <dimen name="activity_jobseeker_details_icons_largewidth">46dp</dimen>
+    <dimen name="activity_jobseeker_details_heading_textsize">19dp</dimen>
+    <dimen name="activity_jobseeker_details_detail_layout_height">35dp</dimen>
+    <dimen name="activity_jobseeker_details_phone_layout_height">25dp</dimen>
+    <dimen name="activity_jobseeker_details_address_layout_height">25dp</dimen>
+    <dimen name="activity_jobseeker_details_email_layout_bottompadding">6dp</dimen>
+    <dimen name="activity_jobseeker_details_heading_height">36dp</dimen>
+    <dimen name="activity_jobseeker_details_text_leftmargin">23dp</dimen>
+    <dimen name="activity_jobseeker_details_edittext_leftmargin">12dp</dimen>
+
+
+</resources>

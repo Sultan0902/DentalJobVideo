@@ -1,0 +1,136 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.vishant.DentalJobVideo.fragment.employer.SettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/fragment_header_layout"
+            android:id="@+id/fragment_header"></include>
+        <LinearLayout
+            android:layout_below="@+id/fragment_header"
+            android:layout_width="match_parent"
+            android:background="@mipmap/dark_bg"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/fragment_setting_notification"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_settings_employeer_item_height"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/fragment_setting_notification_image"
+                android:background="@mipmap/notification"
+                style="@style/setting_fragment_employer_icon"
+                 />
+            <TextView
+                android:id="@+id/fragment_setting_notification_text"
+                android:text="@string/fragment_setting_notification"
+                android:layout_toRightOf="@+id/fragment_setting_notification_image"
+                style="@style/setting_fragment_employer_title" />
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:background="@mipmap/seperator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment_settings_employeer_item_border_size" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/fragment_setting_changepassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_settings_employeer_item_height"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fragment_setting_notification">
+            <ImageView
+                android:id="@+id/fragment_setting_changepassword_image"
+                android:background="@mipmap/change_password"
+                style="@style/setting_fragment_employer_icon"
+                 />
+            <TextView
+                android:id="@+id/fragment_setting_changepassword_text"
+                android:text="@string/fragment_setting_changepassword"
+                android:layout_toRightOf="@+id/fragment_setting_changepassword_image"
+                style="@style/setting_fragment_employer_title" />
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:background="@mipmap/seperator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment_settings_employeer_item_border_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_setting_privacypolicy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_settings_employeer_item_height"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fragment_setting_changepassword">
+            <ImageView
+                android:id="@+id/fragment_setting_privacypolicy_image"
+                android:background="@mipmap/privacy_policy"
+                style="@style/setting_fragment_employer_icon"
+                 />
+            <TextView
+                android:id="@+id/fragment_setting_privacypolicy_text"
+                android:text="@string/fragment_setting_privacypolicy"
+                android:layout_toRightOf="@+id/fragment_setting_privacypolicy_image"
+                style="@style/setting_fragment_employer_title" />
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:background="@mipmap/seperator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment_settings_employeer_item_border_size" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/fragment_setting_termsconditions"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_settings_employeer_item_height"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fragment_setting_privacypolicy">
+            <ImageView
+                android:id="@+id/fragment_setting_termsconditions_image"
+                android:background="@mipmap/terms"
+                style="@style/setting_fragment_employer_icon"
+                 />
+            <TextView
+                android:id="@+id/fragment_setting_termsconditions_text"
+                android:text="@string/fragment_setting_termsandcondtion"
+                android:layout_toRightOf="@+id/fragment_setting_termsconditions_image"
+                style="@style/setting_fragment_employer_title" />
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:background="@mipmap/seperator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment_settings_employeer_item_border_size" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/fragment_setting_logout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_settings_employeer_item_height"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fragment_setting_termsconditions">
+            <ImageView
+                android:id="@+id/fragment_setting_logout_image"
+                android:background="@drawable/ic_logout"
+                style="@style/setting_fragment_employer_icon"
+                />
+            <TextView
+                android:id="@+id/fragment_setting_logout_text"
+                android:text="@string/fragment_setting_logout"
+                android:layout_toRightOf="@+id/fragment_setting_logout_image"
+                style="@style/setting_fragment_employer_title" />
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:background="@mipmap/seperator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment_settings_employeer_item_border_size" />
+        </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_profile_education"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.vishant.DentalJobVideo.activity.job_seeker.AddProfileEducationActivity">
+
+    <include layout="@layout/top_header_layout"
+        android:id="@+id/top_header"></include>
+
+    <TextView
+        android:id="@+id/education_title"
+        android:layout_marginTop="@dimen/activity_objectives_title_topmargin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/education_add_title"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/activity_education_title_textsize"
+        android:layout_below="@+id/top_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/education_degree_field"
+        android:background="@mipmap/text_field"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/activity_education_field_textsize"
+        android:paddingLeft="@dimen/login_field_left_padding"
+        android:paddingRight="@dimen/login_field_left_padding"
+        android:textColorHint="@color/login_text_hint_color"
+        android:hint="@string/education_degree_hint"
+        android:layout_below="@+id/education_title"
+        android:layout_marginRight="@dimen/activity_education_field_margin"
+        android:layout_marginLeft="@dimen/activity_education_field_margin"
+        android:layout_marginTop="@dimen/activity_education_field_topmargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_education_field_height" />
+    <EditText
+        android:id="@+id/education_institute_field"
+        android:background="@mipmap/text_field"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/activity_education_field_textsize"
+        android:paddingLeft="@dimen/login_field_left_padding"
+        android:paddingRight="@dimen/login_field_left_padding"
+        android:textColorHint="@color/login_text_hint_color"
+        android:hint="@string/education_institute_hint"
+        android:layout_below="@+id/education_degree_field"
+        android:layout_marginRight="@dimen/activity_education_field_margin"
+        android:layout_marginLeft="@dimen/activity_education_field_margin"
+        android:layout_marginTop="@dimen/activity_education_field_topmargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_education_field_height" />
+    <LinearLayout
+        android:id="@+id/education_year_layout"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/activity_education_field_margin"
+        android:layout_marginLeft="@dimen/activity_education_field_margin"
+        android:layout_below="@+id/education_institute_field"
+        android:layout_height="@dimen/activity_education_field_height"
+        android:layout_marginTop="@dimen/activity_education_field_topmargin"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/education_startyear_field"
+        android:background="@mipmap/text_field"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:textColor="@color/login_text_color"
+        android:layout_marginRight="@dimen/activity_education_yearfield_margin"
+        android:textSize="@dimen/activity_education_field_textsize"
+        android:paddingLeft="@dimen/login_field_left_padding"
+        android:paddingRight="@dimen/login_field_left_padding"
+        android:textColorHint="@color/login_text_hint_color"
+        android:hint="@string/education_startyear_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/education_endyear_field"
+        android:background="@mipmap/text_field"
+        android:layout_marginLeft="@dimen/activity_education_yearfield_margin"
+        android:textColor="@color/login_text_color"
+        android:inputType="number"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/activity_education_field_textsize"
+        android:paddingLeft="@dimen/login_field_left_padding"
+        android:paddingRight="@dimen/login_field_left_padding"
+        android:textColorHint="@color/login_text_hint_color"
+        android:hint="@string/education_endyear_hint"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/education_submit_button"
+        android:background="@mipmap/submit"
+        android:layout_below="@+id/education_year_layout"
+        android:layout_marginRight="@dimen/activity_education_field_margin"
+        android:layout_marginLeft="@dimen/activity_education_field_margin"
+        android:layout_marginTop="@dimen/activity_education_button_topmargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_education_button_height" />
+
+    <TextView
+        android:id="@+id/education_delete_button"
+        android:layout_below="@+id/education_submit_button"
+        android:text="@string/experience_delete_text"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_education_button_topmargin"
+        android:textSize="@dimen/activity_education_title_textsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</RelativeLayout>

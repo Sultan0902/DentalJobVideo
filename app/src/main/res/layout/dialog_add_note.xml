@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/add_note_dialog_width"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/add_note_layout"
+        android:background="@mipmap/pop_up"
+        android:layout_marginTop="@dimen/add_note_cancel_button_margin"
+        android:layout_marginRight="@dimen/add_note_cancel_button_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/add_note_header_title"
+            android:layout_marginTop="@dimen/add_note_dialog_header_topmargin"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="@dimen/add_note_dialog_header_textsize"
+            android:text="@string/top5_profile_activity_add_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/add_note_header_seperator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/add_note_dialog_header_seperator_topmargin"
+            android:layout_below="@+id/add_note_header_title"
+            android:background="@mipmap/seperator"/>
+        <EditText
+            android:id="@+id/add_note_detail"
+            android:textColor="@color/login_text_color"
+            android:textColorHint="@color/login_text_hint_color"
+            android:gravity="top"
+            android:textSize="@dimen/add_note_dialog_detail_textsize"
+            android:hint="@string/top5_profile_activity_add_note_hint"
+            android:layout_margin="@dimen/add_note_dialog_detail_margin"
+            android:layout_below="@+id/add_note_header_seperator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/add_note_dialog_detail_height" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/add_note_detail"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/add_note_bottom_margin"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/add_note_done_button"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:text="@string/header_done_text"
+                android:textSize="@dimen/add_note_dialog_done_textSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/add_note_delete_button"
+                android:layout_marginLeft="@dimen/add_note_dialog_detail_margin"
+                android:background="@mipmap/ic_delete"
+                android:layout_width="@dimen/add_note_dialog_delete_button_size"
+                android:layout_height="@dimen/add_note_dialog_delete_button_size" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/add_note_cancel_button"
+        android:layout_width="@dimen/add_note_dialog_cancel_button_size"
+        android:layout_height="@dimen/add_note_dialog_cancel_button_size"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/ic_cancel"/>
+
+</RelativeLayout>

@@ -1,0 +1,525 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/bg"
+    android:layout_height="match_parent"
+    tools:context="com.vishant.DentalJobVideo.fragment.jobseeker.ViewProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/fragment_header"
+            layout="@layout/fragment_header_layout" />
+
+    <ScrollView
+        android:id="@+id/view_profile_scrollview"
+        android:layout_below="@+id/fragment_header"
+        android:layout_width="match_parent"
+        android:background="@mipmap/dark_bg"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/view_profile_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_profile_job_seeker_info_layout_height">
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:id="@+id/view_profile_info_image_layout"
+                    android:layout_marginLeft="@dimen/view_profile_job_seeker_info_leftmargin"
+                    android:layout_width="@dimen/view_profile_job_seeker_info_image_size"
+                    android:layout_height="@dimen/view_profile_job_seeker_info_image_size">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/view_profile_info_image"
+                        android:layout_margin="@dimen/signup_image_padding"
+                        app:civ_border_width="0dp"
+                        app:civ_border="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:id="@+id/view_profile_info_image_holder"
+                        android:background="@mipmap/img_outline"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/view_profile_info_username"
+                    android:textColor="@color/view_profile_name_color"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/view_profile_job_seeker_info_title_textsize"
+                    android:layout_marginLeft="@dimen/view_profile_job_seeker_info_title_leftmargin"
+                    android:layout_toRightOf="@+id/view_profile_info_image_layout"
+                    android:layout_marginTop="@dimen/view_profile_job_seeker_info_title_topmargin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/view_profile_info_speciality"
+                    android:textColor="@color/view_profile_field_color"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/view_profile_info_username"
+                    android:textSize="@dimen/view_profile_job_seeker_info_details_textsize"
+                    android:layout_marginLeft="@dimen/view_profile_job_seeker_info_title_leftmargin"
+                    android:layout_toRightOf="@+id/view_profile_info_image_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/view_profile_info_seperator"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/view_profile_job_seeker_info_title_leftmargin"
+                    android:layout_toRightOf="@+id/view_profile_info_image_layout"
+                    android:layout_below="@id/view_profile_info_speciality"
+                    android:background="@mipmap/seperator"
+                    android:layout_height="1dp" />
+                <EditText
+                    android:id="@+id/view_profile_info_companyname"
+                    android:textColor="@color/view_profile_field_color"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/view_profile_info_company_dummy"
+                    android:padding="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/view_profile_info_seperator"
+                    android:textSize="@dimen/view_profile_job_seeker_info_details_textsize"
+                    android:layout_marginLeft="@dimen/view_profile_job_seeker_info_title_leftmargin"
+                    android:layout_toRightOf="@+id/view_profile_info_image_layout"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/view_profile_job_seeker_info_details_textsize" />
+                <RelativeLayout
+                    android:id="@+id/view_profile_icons_layout"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/view_profile_job_seeker_info_icons_topmargin"
+                    android:layout_marginRight="@dimen/view_profile_job_seeker_info_icons_rightmargin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/view_profile_job_seeker_info_icons_height">
+                    <ImageButton
+                        android:id="@+id/view_profile_icons_edit"
+                        android:background="@mipmap/ic_edit"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="@dimen/view_profile_job_seeker_info_icons_online_icon_width"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"/>
+                    <ImageButton
+                        android:id="@+id/view_profile_icons_public"
+                        android:layout_marginLeft="@dimen/view_profile_job_seeker_info_icons_margin"
+                        android:layout_toRightOf="@+id/view_profile_icons_edit"
+                        android:background="@mipmap/ic_public"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="@dimen/view_profile_job_seeker_info_icons_public_icon_width"
+                        android:layout_height="@dimen/view_profile_job_seeker_info_icons_public_icon_width" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/view_profile_contact_layout"
+                android:layout_below="@+id/view_profile_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/view_profile_contact_heading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_profile_job_seeker_details_heading_height">
+                    <TextView
+                        android:id="@+id/view_profile_contact_heading"
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/view_profile_job_seeker_details_heading_textsize"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/view_profile_job_seeker_details_text_leftmargin"
+                        android:text="@string/view_profile_contact"
+                        android:background="@color/view_profile_selection_color"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_heading_height">
+                    </TextView>
+                </RelativeLayout>
+
+
+               <LinearLayout
+                    android:id="@+id/view_profile_contact_details_layout"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/view_profile_contact_heading_layout"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/view_profile_contact_username_layout"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_detail_layout_height">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="@dimen/view_profile_job_seeker_details_text_leftmargin"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/view_profile_name_color"
+                            android:textSize="@dimen/view_profile_job_seeker_info_details_textsize"
+                            android:text="@string/view_profile_contact_detail_username"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:enabled="false"
+                            android:id="@+id/view_profile_contact_username_detail"
+                            android:layout_width="wrap_content"
+                            android:padding="0dp"
+                            android:editable="false"
+                            android:textIsSelectable="false"
+                            android:layout_marginLeft="@dimen/view_profile_job_seeker_details_edittext_leftmargin"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/view_profile_field_color"
+                            android:textSize="@dimen/view_profile_job_seeker_info_details_textsize"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_seperator_height"
+                        android:background="@mipmap/seperator"/>
+
+                    <LinearLayout
+                        android:id="@+id/view_profile_contact_email_layout"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_detail_layout_height">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="@dimen/view_profile_job_seeker_details_text_leftmargin"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/view_profile_name_color"
+                            android:textSize="@dimen/view_profile_job_seeker_info_details_textsize"
+                            android:text="@string/view_profile_contact_detail_email"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:enabled="false"
+                            android:id="@+id/view_profile_contact_email_detail"
+                            android:layout_width="wrap_content"
+                            android:padding="0dp"
+                            android:textIsSelectable="false"
+                            android:editable="false"
+                            android:layout_marginLeft="@dimen/view_profile_job_seeker_details_edittext_leftmargin"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/view_profile_field_color"
+                            android:textSize="@dimen/view_profile_job_seeker_info_details_textsize"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_seperator_height"
+                        android:background="@mipmap/seperator"/>
+                    <LinearLayout
+                        android:id="@+id/view_profile_contact_phone_layout"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_detail_layout_height">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="@dimen/view_profile_job_seeker_details_text_leftmargin"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/view_profile_name_color"
+                            android:textSize="@dimen/view_profile_job_seeker_info_details_textsize"
+                            android:text="@string/view_profile_contact_detail_phone"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:enabled="false"
+                            android:id="@+id/view_profile_contact_phone_detail"
+                            android:layout_width="wrap_content"
+                            android:padding="0dp"
+                            android:textIsSelectable="false"
+                            android:editable="false"
+                            android:layout_marginLeft="@dimen/view_profile_job_seeker_details_edittext_leftmargin"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/view_profile_field_color"
+                            android:textSize="@dimen/view_profile_job_seeker_info_details_textsize"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_seperator_height"
+                        android:background="@mipmap/seperator"/>
+                    <LinearLayout
+                        android:id="@+id/view_profile_contact_location_layout"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_detail_layout_height">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="@dimen/view_profile_job_seeker_details_text_leftmargin"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/view_profile_name_color"
+                            android:textSize="@dimen/view_profile_job_seeker_info_details_textsize"
+                            android:text="@string/view_profile_contact_detail_location"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:enabled="false"
+                            android:id="@+id/view_profile_contact_location_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="@dimen/view_profile_job_seeker_details_edittext_leftmargin"
+                            android:padding="0dp"
+                            android:textIsSelectable="false"
+                            android:editable="false"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/view_profile_field_color"
+                            android:textSize="@dimen/view_profile_job_seeker_info_details_textsize"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_seperator_height"
+                        android:background="@mipmap/seperator"/>
+                    <LinearLayout
+                        android:id="@+id/view_profile_contact_zipcode_layout"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_detail_layout_height">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="@dimen/view_profile_job_seeker_details_text_leftmargin"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/view_profile_name_color"
+                            android:textSize="@dimen/view_profile_job_seeker_info_details_textsize"
+                            android:text="@string/view_profile_contact_detail_zipcode"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:enabled="false"
+                            android:id="@+id/view_profile_contact_zipcode_detail"
+                            android:padding="0dp"
+                            android:editable="false"
+                            android:textIsSelectable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="@dimen/view_profile_job_seeker_details_edittext_leftmargin"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/view_profile_field_color"
+                            android:textSize="@dimen/view_profile_job_seeker_info_details_textsize"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/view_profile_professional_skills_layout"
+                android:layout_below="@+id/view_profile_contact_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/view_profile_professional_skills_heading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_profile_job_seeker_details_heading_height">
+
+                    <TextView
+                        android:id="@+id/view_profile_professional_skills_heading"
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/view_profile_job_seeker_details_heading_textsize"
+                        android:paddingLeft="@dimen/view_profile_job_seeker_details_text_leftmargin"
+                        android:text="@string/view_profile_professional_skills"
+                        android:background="@color/view_profile_selection_color"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_heading_height"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+                    <ImageButton
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/ic_add"
+                        android:id="@+id/view_profile_professional_skills_add"
+                        android:layout_marginRight="@dimen/view_profile_job_seeker_details_edit_rightmargin"
+                        android:layout_width="@dimen/view_profile_job_seeker_details_edit_iconsize"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_edit_iconsize" />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/view_profile_job_seeker_skill_layout"
+                    android:layout_below="@+id/view_profile_professional_skills_heading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/view_profile_objectives_layout"
+                android:layout_below="@+id/view_profile_professional_skills_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/view_profile_objectives_heading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_profile_job_seeker_details_heading_height">
+
+                <TextView
+                    android:id="@+id/view_profile_objectives_heading"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/view_profile_job_seeker_details_heading_textsize"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/view_profile_job_seeker_details_text_leftmargin"
+                    android:text="@string/view_profile_objectives"
+                    android:background="@color/view_profile_selection_color"
+                    android:layout_height="@dimen/view_profile_job_seeker_details_heading_height" />
+                    <ImageButton
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/ic_add"
+                        android:id="@+id/view_profile_objectives_add"
+                        android:layout_marginRight="@dimen/view_profile_job_seeker_details_edit_rightmargin"
+                        android:layout_width="@dimen/view_profile_job_seeker_details_edit_iconsize"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_edit_iconsize"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/view_profile_job_seeker_objective_layout"
+                    android:layout_below="@+id/view_profile_objectives_heading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+                    </LinearLayout>
+                
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/view_profile_experience_layout"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/view_profile_objectives_layout"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/view_profile_experience_heading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_profile_job_seeker_details_heading_height">
+
+                <TextView
+                    android:id="@+id/view_profile_experience_heading"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/view_profile_job_seeker_details_heading_textsize"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/view_profile_job_seeker_details_text_leftmargin"
+                    android:text="@string/view_profile_experience"
+                    android:background="@color/view_profile_selection_color"
+                    android:layout_height="@dimen/view_profile_job_seeker_details_heading_height" />
+                    <ImageButton
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/ic_add"
+                        android:id="@+id/view_profile_experience_add"
+                        android:layout_marginRight="@dimen/view_profile_job_seeker_details_edit_rightmargin"
+                        android:layout_width="@dimen/view_profile_job_seeker_details_edit_iconsize"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_edit_iconsize" />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/view_profile_job_seeker_experience_layout"
+                    android:layout_below="@+id/view_profile_experience_heading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/view_profile_education_layout"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/view_profile_experience_layout"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/view_profile_education_heading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_profile_job_seeker_details_heading_height">
+
+                <TextView
+                    android:id="@+id/view_profile_education_heading"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/view_profile_job_seeker_details_text_leftmargin"
+                    android:textSize="@dimen/view_profile_job_seeker_details_heading_textsize"
+                    android:text="@string/view_profile_education"
+                    android:background="@color/view_profile_selection_color"
+                    android:layout_height="@dimen/view_profile_job_seeker_details_heading_height" />
+                    <ImageButton
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/ic_add"
+                        android:id="@+id/view_profile_education_add"
+                        android:layout_marginRight="@dimen/view_profile_job_seeker_details_edit_rightmargin"
+                        android:layout_width="@dimen/view_profile_job_seeker_details_edit_iconsize"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_edit_iconsize" />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/view_profile_job_seeker_education_layout"
+                    android:layout_below="@+id/view_profile_education_heading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/view_profile_videoresume_layout"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/view_profile_education_layout"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/view_profile_videoresume_heading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_profile_job_seeker_details_heading_height">
+                <TextView
+                    android:id="@+id/view_profile_videoresume_heading"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/view_profile_job_seeker_details_text_leftmargin"
+                    android:textSize="@dimen/view_profile_job_seeker_details_heading_textsize"
+                    android:text="@string/view_profile_videoresume"
+                    android:background="@color/view_profile_selection_color"
+                    android:layout_height="@dimen/view_profile_job_seeker_details_heading_height" />
+                    <ImageButton
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/ic_add"
+                        android:id="@+id/view_profile_videoresume_add"
+                        android:layout_marginRight="@dimen/view_profile_job_seeker_details_edit_rightmargin"
+                        android:layout_width="@dimen/view_profile_job_seeker_details_edit_iconsize"
+                        android:layout_height="@dimen/view_profile_job_seeker_details_edit_iconsize" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/view_profile_job_seeker_videoresume_layout"
+                    android:layout_below="@+id/view_profile_videoresume_heading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/view_profile_videoresume_videoview"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/job_detail_videoview_height" />
+                    <ImageButton
+                        android:id="@+id/view_profile_videoresume_play_button"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/ic_play"
+                        android:layout_width="@dimen/activity_post_video_job_videoview_play_icon"
+                        android:layout_height="@dimen/activity_post_video_job_videoview_play_icon" />
+                        <ImageButton
+                        android:id="@+id/view_profile_videoresume_edit_button"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/ic_edit"
+                        android:layout_width="@dimen/activity_post_video_job_videoview_play_icon"
+                        android:layout_height="@dimen/activity_post_video_job_videoview_play_icon"
+                        android:visibility="gone"    />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

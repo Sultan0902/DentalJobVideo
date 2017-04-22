@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.vishant.DentalJobVideo.activity.employeer.DashboardEmployerActivity">
+
+    <TextView
+        android:id="@+id/dashboard_header_text"
+        android:text="@string/dashboard_text"
+        style="@style/activity_header_text"
+        />
+    <ImageView
+        android:id="@+id/dashboard_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dashboard_header_text"
+        android:layout_marginTop="@dimen/dashboard_logo_topmargin"
+        android:layout_marginLeft="@dimen/dashboard_logo_leftmargin"
+        android:layout_marginRight="@dimen/dashboard_logo_rightmargin"
+        android:background="@mipmap/logo"/>
+
+    <RelativeLayout
+        android:id="@+id/dashboard_menu_layout"
+        android:layout_below="@+id/dashboard_logo"
+        style="@style/dashboard_menu">
+        <ImageView
+            android:id="@+id/dashboard_menu_job"
+            style="@style/dashboard_menu_icon_size"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/jobs"
+             />
+
+        <ImageView
+            android:id="@+id/dashboard_menu_message"
+            style="@style/dashboard_menu_icon_size"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dashboard_menu_manage_video_top_margin"
+            android:background="@mipmap/messages"
+             />
+        <ImageView
+            android:id="@+id/dashboard_menu_top5"
+            style="@style/dashboard_menu_icon_size"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/dashboard_menu_job"
+            android:layout_marginTop="@dimen/dashboard_menu_myjobs_top_margin"
+            android:background="@mipmap/top_5"
+
+             />
+        <ImageView
+            android:id="@+id/dashboard_menu_view_profile"
+            style="@style/dashboard_menu_icon_size"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/dashboard_menu_myjobs_top_margin"
+            android:layout_below="@+id/dashboard_menu_manage_video"
+            android:background="@mipmap/company_profile"
+             />
+        <ImageView
+            android:id="@+id/dashboard_menu_hidden_resume"
+            android:layout_alignParentRight="true"
+            style="@style/dashboard_menu_icon_size"
+            android:layout_marginTop="@dimen/dashboard_menu_myjobs_top_margin"
+            android:layout_below="@+id/dashboard_menu_message"
+            android:background="@mipmap/hidden_resume"
+
+             />
+        <ImageView
+            android:id="@+id/dashboard_menu_setting"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dashboard_menu_myjobs_top_margin"
+            android:layout_below="@+id/dashboard_menu_top5"
+            style="@style/dashboard_menu_icon_size"
+            android:background="@mipmap/settings"
+             />
+
+        <ImageView
+            android:id="@+id/dashboard_menu_manage_video"
+            style="@style/dashboard_menu_icon_size"
+            android:background="@mipmap/manage_videos"
+            android:layout_alignTop="@+id/dashboard_menu_message"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

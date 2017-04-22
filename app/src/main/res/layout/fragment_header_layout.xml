@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+    <TextView
+
+        android:id="@+id/fragment_actionbar_text"
+        android:layout_centerInParent="true"
+        android:textAllCaps="true"
+        android:textColor="@color/header_text_color"
+        android:text="Header"
+        android:textStyle="bold"
+        android:textSize="@dimen/header_textsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/fragment_actionbar_edit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/header_padding"
+        android:layout_width="@dimen/header_add_icon_size"
+        android:layout_height="@dimen/header_add_icon_size"
+        android:background="@mipmap/ic_edit"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/fragment_actionbar_apply"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/header_padding"
+        android:layout_width="wrap_content"
+        android:textColor="@color/header_text_color"
+        android:textSize="@dimen/header_next_textsize"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/header_apply_text"/>
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/fragment_actionbar_done"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/header_padding"
+        android:layout_width="wrap_content"
+        android:textColor="@color/header_text_color"
+        android:textSize="@dimen/header_next_textsize"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/header_done_text"/>
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/fragment_actionbar_postjob"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/header_padding"
+        android:layout_width="wrap_content"
+        android:textColor="@color/header_text_color"
+        android:textSize="@dimen/header_next_textsize"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/header_post_job_text"/>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/job_search_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.vishant.DentalJobVideo.fragment.jobseeker.JobSearchFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/fragment_header"
+            layout="@layout/fragment_header_layout" />
+
+        <RelativeLayout
+            android:background="@mipmap/dark_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/job_search_layout"
+                android:layout_marginTop="@dimen/job_search_bar_top_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/job_search_search"
+                android:hint="@string/job_search_search_hint"
+                android:textColor="@color/header_text_color"
+                android:textStyle="bold"
+                android:textColorHint="@color/header_text_color"
+                android:textSize="@dimen/job_search_searchbar_hint_textsize"
+                android:background="@mipmap/job_search_field"
+                android:layout_marginLeft="@dimen/job_search_searchbar_margin"
+                android:layout_marginRight="@dimen/job_search_searchbar_rightmargin"
+                android:layout_width="match_parent"
+                android:paddingRight="@dimen/job_search_searchbar_rightpadding"
+                android:paddingLeft="@dimen/job_search_searchbar_rightpadding"
+                android:drawableLeft="@mipmap/ic_search"
+                android:drawablePadding="@dimen/job_search_searchbar_rightpadding"
+                android:layout_height="@dimen/job_search_searchbar_height"></EditText>
+
+                <TextView
+                    android:id="@+id/job_search_filter_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/job_search_searchbar_margin"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="@dimen/job_search_filter_textsize"
+                    android:text="@string/job_search_filter"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/job_search_view_options_layout"
+                android:layout_marginTop="@dimen/job_search_bar_top_margin"
+                android:layout_marginLeft="@dimen/job_search_searchbar_margin"
+                android:layout_marginRight="@dimen/job_search_searchbar_margin"
+                android:layout_below="@+id/job_search_layout"
+                android:layout_width="match_parent"
+                android:background="@mipmap/button_list_active"
+                android:weightSum="2"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/job_search_option_list"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/job_search_options_height" />
+                <TextView
+                    android:id="@+id/job_search_option_map"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/job_search_options_height" />
+                
+            </LinearLayout>
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/job_search_recyclerview_swipeRefresh"
+                android:layout_marginTop="@dimen/job_search_rv_topmargin"
+                android:layout_below="@+id/job_search_view_options_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/job_search_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/job_search_mapview"
+                android:layout_marginTop="@dimen/job_search_rv_topmargin"
+                android:layout_below="@+id/job_search_view_options_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </com.google.android.gms.maps.MapView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

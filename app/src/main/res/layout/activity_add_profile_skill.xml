@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_profile_skill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.vishant.DentalJobVideo.activity.job_seeker.AddProfileSkillActivity">
+    <include layout="@layout/top_header_layout"
+        android:id="@+id/top_header"></include>
+    <TextView
+        android:id="@+id/prof_skill_title"
+        android:layout_marginTop="@dimen/activity_prof_skills_title_topmargin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/prof_skill_add_title"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/activity_prof_skills_title_textsize"
+        android:layout_below="@+id/top_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/prof_skill_skill_field"
+        android:background="@mipmap/text_field"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/activity_prof_skills_field_textsize"
+        android:paddingLeft="@dimen/login_field_left_padding"
+        android:paddingRight="@dimen/login_field_left_padding"
+        android:textColorHint="@color/login_text_hint_color"
+        android:hint="@string/prof_skill_skill_hint"
+        android:layout_below="@+id/prof_skill_title"
+        android:layout_marginRight="@dimen/activity_prof_skills_field_margin"
+        android:layout_marginLeft="@dimen/activity_prof_skills_field_margin"
+        android:layout_marginTop="@dimen/activity_prof_skills_field_topmargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_prof_skills_field_height" />
+    <Button
+        android:id="@+id/prof_skill_submit_button"
+        android:background="@mipmap/submit"
+        android:layout_below="@+id/prof_skill_skill_field"
+        android:layout_marginRight="@dimen/activity_prof_skills_field_margin"
+        android:layout_marginLeft="@dimen/activity_prof_skills_field_margin"
+        android:layout_marginTop="@dimen/activity_prof_skills_button_topmargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_prof_skills_button_height" />
+    <TextView
+        android:id="@+id/prof_skill_delete_button"
+        android:layout_below="@+id/prof_skill_submit_button"
+        android:text="@string/experience_delete_text"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_prof_skills_button_topmargin"
+        android:textSize="@dimen/activity_prof_skills_title_textsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</RelativeLayout>

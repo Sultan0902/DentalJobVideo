@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/employer_job_rv_item_size">
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/job_search_rv_item_image_leftmargin"
+        android:id="@+id/job_item_image_iv_layout"
+        android:layout_width="@dimen/employer_job_rv_item_image_size"
+        android:layout_height="@dimen/employer_job_rv_item_image_size">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/job_item_image_iv"
+            android:layout_margin="@dimen/signup_image_padding"
+            app:civ_border="false"
+            android:background="@mipmap/img_holder_inline"
+            app:civ_border_width="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/job_item_image"
+            android:background="@mipmap/ic_image_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/job_item_title"
+        android:layout_marginLeft="@dimen/job_search_rv_item_detail_leftmargin"
+        android:textSize="@dimen/employer_job_rv_item_title_textsize"
+        android:layout_marginTop="@dimen/employer_job_rv_item_title_topmargin"
+        android:textColor="@color/company_profile_name_color"
+        android:layout_toRightOf="@+id/job_item_image_iv_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/job_item_desc"
+        android:layout_below="@+id/job_item_title"
+        android:maxLines="2"
+        android:lines="2"
+        android:textColor="@color/company_profile_field_color"
+        android:layout_marginLeft="@dimen/employer_job_rv_item_detail_leftmargin"
+        android:textSize="@dimen/employer_job_rv_item_detail_textsize"
+        android:layout_toRightOf="@+id/job_item_image_iv_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/job_item_experience"
+        android:layout_below="@+id/job_item_desc"
+        android:maxLines="1"
+        android:textColor="@color/company_profile_name_color"
+        android:layout_marginLeft="@dimen/employer_job_rv_item_detail_leftmargin"
+        android:textSize="@dimen/employer_job_rv_item_detail_textsize"
+        android:layout_toRightOf="@+id/job_item_image_iv_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/job_item_time"
+        android:layout_alignParentBottom="true"
+        android:maxLines="1"
+        android:layout_marginBottom="@dimen/employer_job_rv_bottommargin"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/company_profile_field_color"
+        android:layout_marginRight="@dimen/employer_job_rv_item_detail_leftmargin"
+        android:textSize="@dimen/employer_job_rv_item_detail_textsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

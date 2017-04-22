@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_marginRight="@dimen/manage_video_rv_item_margin"
+    android:layout_marginLeft="@dimen/manage_video_rv_item_margin"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:id="@+id/video_thumbnail_image_layout"
+        android:layout_marginRight="@dimen/manage_video_rv_item_topmargin"
+        android:layout_marginTop="@dimen/manage_video_rv_item_topmargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/video_thumbnail_image"
+        android:layout_height="@dimen/manage_video_rv_item_hieght"
+        android:layout_width="@dimen/manage_video_rv_item_width"
+        />
+    <ImageView
+        android:id="@+id/video_thumbnail_border"
+        android:background="@drawable/video_thumbnail_drawable"
+        android:layout_height="@dimen/manage_video_rv_item_hieght"
+        android:layout_width="@dimen/manage_video_rv_item_width"
+        />
+        <ImageButton
+            android:id="@+id/video_thumbnail_play_btn"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ic_play"
+            android:layout_width="@dimen/manage_video_rv_item_play_width"
+            android:layout_height="@dimen/manage_video_rv_item_play_width" />
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/video_thumbnail_cross_button"
+        android:background="@mipmap/cros"
+        android:visibility="invisible"
+        android:layout_marginRight="@dimen/manage_video_rv_item_cross_rightmargin"
+        android:layout_alignRight="@+id/video_thumbnail_image_layout"
+        android:layout_width="@dimen/manage_video_rv_item_cross_width"
+        android:layout_height="@dimen/manage_video_rv_item_cross_height" />
+
+</RelativeLayout>

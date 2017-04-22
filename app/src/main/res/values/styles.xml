@@ -1,0 +1,593 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@mipmap/splash</item>
+    </style>
+
+    <style name="activity_header_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/header_textsize</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/header_text_topmargin</item>
+        <item name="android:textColor">@color/header_text_color</item>
+
+    </style>
+
+    <style name="login_fields">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColorHint">@color/login_text_hint_color</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:paddingLeft">@dimen/login_field_left_padding</item>
+        <item name="android:paddingRight">@dimen/login_field_left_padding</item>
+        <item name="android:textSize">@dimen/login_field_textsize</item>
+        <item name="android:layout_height">@dimen/login_field_height</item>
+        <item name="android:layout_marginLeft">@dimen/login_field_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_field_margin</item>
+    </style>
+
+    <style name="login_spinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">@dimen/login_field_left_padding</item>
+        <item name="android:textSize">@dimen/login_field_textsize</item>
+        <item name="android:layout_height">@dimen/login_field_height</item>
+        <item name="android:layout_marginLeft">@dimen/login_field_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_field_margin</item>
+    </style>
+
+    <style name="login_buttons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_button_height</item>
+        <item name="android:layout_marginLeft">@dimen/login_field_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_field_margin</item>
+    </style>
+
+    <style name="dashboard_menu">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">@dimen/dashboard_menu_width</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/dashboard_menu_leftmargin</item>
+        <item name="android:layout_marginRight">@dimen/dashboard_menu_rightmargin</item>
+        <item name="android:layout_marginTop">@dimen/dashboard_menu_topmargin</item>
+    </style>
+
+    <style name="dashboard_menu_icon_size">
+        <item name="android:layout_width">@dimen/dashboard_menu_icon_width</item>
+        <item name="android:layout_height">@dimen/dashboard_menu_icon_height</item>
+    </style>
+
+    <style name="signup_field_style">
+        <item name="android:textColorHint">@color/login_text_hint_color</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:layout_marginLeft">@dimen/signup_field_margin</item>
+        <item name="android:layout_marginRight">@dimen/signup_field_margin</item>
+        <item name="android:layout_marginTop">@dimen/signup_field_topmargin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingRight">@dimen/login_field_left_padding</item>
+        <item name="android:paddingLeft">@dimen/login_field_left_padding</item>
+        <item name="android:textSize">@dimen/signup_field_textsize</item>
+        <item name="android:layout_height">@dimen/signup_field_size</item>
+    </style>
+
+    <style name="signup_field_large_style">
+        <item name="android:textColorHint">@color/login_text_hint_color</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:layout_marginLeft">@dimen/signup_field_margin</item>
+        <item name="android:layout_marginRight">@dimen/signup_field_margin</item>
+        <item name="android:layout_marginTop">@dimen/signup_field_topmargin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">top</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:paddingTop">@dimen/signup_field_large_toppadding</item>
+        <item name="android:paddingBottom">@dimen/signup_field_large_toppadding</item>
+        <item name="android:paddingLeft">@dimen/login_field_left_padding</item>
+        <item name="android:paddingRight">@dimen/login_field_left_padding</item>
+        <item name="android:textSize">@dimen/signup_field_textsize</item>
+        <item name="android:layout_height">@dimen/signup_field_large_size</item>
+    </style>
+
+    <style name="signup_half_field_style">
+        <item name="android:textColorHint">@color/login_text_hint_color</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/signup_field_leftmargin</item>
+        <item name="android:textSize">@dimen/signup_field_textsize</item>
+        <item name="android:layout_height">@dimen/signup_field_size</item>
+    </style>
+
+    <style name="signup_button_style">
+        <item name="android:textColorHint">@color/login_text_hint_color</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:layout_marginLeft">@dimen/signup_field_margin</item>
+        <item name="android:layout_marginRight">@dimen/signup_field_margin</item>
+        <item name="android:layout_marginTop">@dimen/signup_button_topmargin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/signup_button_size</item>
+    </style>
+
+    <style name="NavigationDrawerItemStyle">
+        <item name="android:height">@dimen/nav_drawer_item_height</item>
+        <item name="android:listPreferredItemHeightSmall">@dimen/nav_drawer_item_height</item>
+        <item name="android:textSize">@dimen/nav_drawer_item_text_size</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="companyprofile_field_layout">
+        <item name="android:background">@mipmap/heading_text_bar</item>
+        <item name="android:layout_marginTop">@dimen/company_profile_fields_topmargin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/company_profile_fields_height</item>
+    </style>
+
+    <style name="companyprofile_field_item">
+        <item name="android:padding">0dp</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:lines">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/company_profile_fields_margin</item>
+        <item name="android:layout_marginLeft">@dimen/company_profile_fields_margin</item>
+        <item name="android:textColor">@color/company_profile_field_color</item>
+        <item name="android:textSize">@dimen/company_profile_fields_text_size</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="post_job_desc_edittext">
+        <item name="android:maxLines">3</item>
+        <item name="android:layout_marginLeft">@dimen/activity_post_text_job_info_layout_margin
+        </item>
+        <item name="android:layout_marginRight">@dimen/activity_post_text_job_info_layout_margin
+        </item>
+        <item name="android:paddingTop">@dimen/activity_post_text_job_info_textfield_toppadding
+        </item>
+        <item name="android:paddingBottom">@dimen/activity_post_text_job_info_textfield_toppadding
+        </item>
+        <item name="android:paddingLeft">@dimen/activity_post_text_job_info_textfield_padding</item>
+        <item name="android:paddingRight">@dimen/activity_post_text_job_info_textfield_padding
+        </item>
+        <item name="android:gravity">top</item>
+        <item name="android:textSize">@dimen/activity_post_text_job_info_title_field_textsize</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:textColorHint">@color/login_text_hint_color</item>
+        <item name="android:background">@mipmap/description_text_box</item>
+        <item name="android:layout_marginTop">
+            @dimen/activity_post_text_job_info_desc_field_topmargin
+        </item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:hint">@string/job_video_Description_hint</item>
+        <item name="android:layout_height">@dimen/activity_post_text_job_info_desc_field_height
+        </item>
+    </style>
+
+    <style name="post_job_title_edittext">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:textSize">@dimen/activity_post_text_job_info_title_field_textsize</item>
+        <item name="android:layout_marginLeft">
+            @dimen/activity_post_video_job_info_title_text_rightmargin
+        </item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">@dimen/activity_post_video_job_info_textfield_padding
+        </item>
+        <item name="android:paddingRight">@dimen/activity_post_video_job_info_textfield_padding
+        </item>
+        <item name="android:background">@mipmap/tittle_text_box</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/activity_post_video_job_info_title_field_height
+        </item>
+    </style>
+
+    <style name="post_job_fields_edittext">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/login_text_hint_color</item>
+        <item name="android:textSize">@dimen/activity_post_text_input_field_textsize</item>
+        <item name="android:layout_marginTop">@dimen/activity_post_text_input_field_topmargin</item>
+        <item name="android:layout_marginRight">@dimen/activity_post_text_input_field_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_post_text_input_field_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_post_text_input_field_padding</item>
+        <item name="android:paddingRight">@dimen/activity_post_text_input_field_padding</item>
+        <item name="android:background">@mipmap/text_field</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/activity_post_text_input_field_height</item>
+    </style>
+
+    <style name="posted_job_rv_item_title">
+        <item name="android:layout_marginTop">
+            @dimen/acitivity_posted_job_employeer_rv_item_detail_title_topmargin
+        </item>
+        <item name="android:textSize">@dimen/acitivity_posted_job_employeer_name_textsize</item>
+        <item name="android:layout_marginLeft">
+            @dimen/acitivity_posted_job_employeer_rv_item_detail_leftmargin
+        </item>
+        <item name="android:layout_toRightOf">@+id/item_rv_employeer_posted_job_image</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/company_profile_name_color</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="posted_job_rv_item_detail">
+        <item name="android:textSize">
+            @dimen/acitivity_posted_job_employeer_rv_item_detail_text_size
+        </item>
+        <item name="android:layout_marginLeft">
+            @dimen/acitivity_posted_job_employeer_rv_item_detail_leftmargin
+        </item>
+        <item name="android:layout_toRightOf">@+id/item_rv_employeer_posted_job_image</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="posted_job_info_title">
+        <item name="android:textColor">@color/company_profile_name_color</item>
+        <item name="android:textSize">@dimen/acitivity_posted_job_employeer_name_textsize</item>
+        <item name="android:layout_marginLeft">@dimen/acitivity_posted_job_employeer_name_margin
+        </item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginRight">@dimen/acitivity_posted_job_employeer_name_margin
+        </item>
+        <item name="android:layout_marginTop">@dimen/acitivity_posted_job_employeer_name_topmargin
+        </item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="posted_job_info_desc">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:text">@string/job_posted_info_desc_dummytext</item>
+        <item name="android:textSize">@dimen/acitivity_posted_job_employeer_description_textsize</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">top</item>
+        <item name="android:lines">2</item>
+        <item name="android:layout_marginLeft">@dimen/acitivity_posted_job_employeer_name_margin
+        </item>
+        <item name="android:layout_marginTop">@dimen/acitivity_posted_job_employeer_info_desc_topmargin</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@color/company_profile_field_color</item>
+        <item name="android:layout_marginRight">@dimen/acitivity_posted_job_employeer_name_margin
+        </item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="posted_job_desc_field_layout">
+        <item name="android:background">@mipmap/heading_text_bar</item>
+        <item name="android:layout_marginTop">
+            @dimen/acitivity_posted_job_employeer_description_field_topmargin
+        </item>
+        <item name="android:paddingLeft">
+            @dimen/acitivity_posted_job_employeer_description_field_left_margin
+        </item>
+        <item name="android:paddingRight">
+            @dimen/acitivity_posted_job_employeer_description_field_right_margin
+        </item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">
+            @dimen/acitivity_posted_job_employeer_description_field_height
+        </item>
+    </style>
+
+    <style name="posted_job_desc_field_item">
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_marginLeft">@dimen/acitivity_posted_job_employeer_description_field_left_margin</item>
+        <item name="android:textColor">@color/company_profile_field_color</item>
+        <item name="android:textSize">@dimen/acitivity_posted_job_employeer_description_textsize
+        </item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="posted_video_job_info_title">
+        <item name="android:textColor">@color/company_profile_name_color</item>
+        <item name="android:textSize">@dimen/acitivity_posted_job_employeer_name_textsize</item>
+        <item name="android:layout_marginLeft">@dimen/acitivity_posted_job_employeer_name_margin
+        </item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginRight">@dimen/acitivity_posted_job_employeer_name_margin
+        </item>
+        <item name="android:layout_marginTop">
+            @dimen/acitivity_posted_job_video_employeer_name_topmargin
+        </item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="posted_video_job_info_exp">
+        <item name="android:textColor">@color/company_profile_name_color</item>
+        <item name="android:textSize">@dimen/acitivity_posted_job_video_employeer_experience_textsize
+        </item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginLeft">@dimen/acitivity_posted_job_employeer_name_margin
+        </item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginRight">@dimen/acitivity_posted_job_employeer_name_margin
+        </item>
+        <item name="android:layout_marginTop">
+            @dimen/acitivity_posted_job_employeer_rv_item_detail_desc_topmargin
+        </item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="job_seeker_rv_item_title">
+        <item name="android:layout_marginTop">
+            @dimen/fragment_jobseeker_rv_item_detail_title_topmargin
+        </item>
+        <item name="android:textSize">@dimen/fragment_jobseeker_rv_item_name_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/fragment_jobseeker_rv_item_detail_leftmargin
+        </item>
+        <item name="android:layout_marginRight">
+            @dimen/fragment_jobseeker_rv_item_detail_rightmargin
+        </item>
+        <item name="android:layout_toRightOf">@+id/item_rv_employeer_job_seeker_image_layout</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/company_profile_name_color</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="job_seeker_rv_item_detail">
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textSize">@dimen/fragment_jobseeker_rv_item_detail_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/fragment_jobseeker_rv_item_detail_leftmargin
+        </item>
+        <item name="android:layout_marginRight">
+            @dimen/fragment_jobseeker_rv_item_detail_rightmargin
+        </item>
+        <item name="android:layout_marginTop">
+            @dimen/fragment_jobseeker_rv_item_detail_desc_topmargin
+        </item>
+        <item name="android:layout_toRightOf">@+id/item_rv_employeer_job_seeker_image_layout</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="messages_rv_item_title">
+        <item name="android:layout_marginTop">
+            @dimen/fragment_jobseeker_rv_item_detail_title_topmargin
+        </item>
+        <item name="android:textSize">@dimen/fragment_jobseeker_rv_item_name_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/fragment_jobseeker_rv_item_detail_leftmargin
+        </item>
+        <item name="android:layout_marginRight">
+            @dimen/fragment_jobseeker_rv_item_detail_rightmargin
+        </item>
+        <item name="android:layout_toRightOf">@+id/item_rv_employeer_message_image</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/company_profile_name_color</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="messages_rv_item_detail">
+        <item name="android:lines">2</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textSize">@dimen/fragment_jobseeker_rv_item_detail_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/fragment_jobseeker_rv_item_detail_leftmargin
+        </item>
+        <item name="android:layout_marginRight">
+            @dimen/fragment_jobseeker_rv_item_detail_rightmargin
+        </item>
+        <item name="android:layout_marginTop">
+            @dimen/fragment_jobseeker_rv_item_detail_desc_topmargin
+        </item>
+        <item name="android:layout_toRightOf">@+id/item_rv_employeer_message_image</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="top5_rv_item_title">
+        <item name="android:layout_marginTop">
+            @dimen/acitivity_posted_job_employeer_rv_item_detail_title_topmargin
+        </item>
+        <item name="android:textSize">@dimen/acitivity_posted_job_employeer_name_textsize</item>
+        <item name="android:layout_marginLeft">
+            @dimen/acitivity_posted_job_employeer_rv_item_detail_leftmargin
+        </item>
+        <item name="android:layout_toRightOf">@+id/item_rv_top5_image</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/company_profile_name_color</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="top5_rv_item_detail">
+        <item name="android:textSize">
+            @dimen/acitivity_posted_job_employeer_rv_item_detail_text_size
+        </item>
+        <item name="android:layout_marginLeft">
+            @dimen/acitivity_posted_job_employeer_rv_item_detail_leftmargin
+        </item>
+        <item name="android:layout_toRightOf">@+id/item_rv_top5_image</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="setting_fragment_employer_title">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">
+            @dimen/fragment_settings_employeer_item_title_left_margin
+        </item>
+        <item name="android:textSize">@dimen/fragment_settings_employeer_item_title_text_size</item>
+        <item name="android:textColor">@color/header_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="setting_fragment_employer_icon">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">
+            @dimen/fragment_settings_employeer_item_icon_left_margin
+        </item>
+        <item name="android:layout_width">@dimen/fragment_settings_employeer_item_icon_size</item>
+        <item name="android:layout_height">@dimen/fragment_settings_employeer_item_icon_size</item>
+    </style>
+
+    <style name="change_password_dialog">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:layout_marginLeft">@dimen/change_password_field_margin</item>
+        <item name="android:layout_marginRight">@dimen/change_password_field_margin</item>
+        <item name="android:layout_marginTop">@dimen/change_password_field_topmargin</item>
+        <item name="android:paddingLeft">@dimen/change_password_field_padding</item>
+        <item name="android:paddingRight">@dimen/change_password_field_padding</item>
+        <item name="android:background">@mipmap/dialog_textbox</item>
+        <item name="android:textColorHint">@color/change_password_field_hint</item>
+        <item name="android:textColor">@color/change_password_field_hint</item>
+        <item name="android:textSize">@dimen/change_password_field_text_size</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/change_password_field_height</item>
+    </style>
+
+    <style name="jobseeker_details_item_title">
+        <item name="android:layout_marginTop">
+            @dimen/activity_jobseeker_details_title_topmargin
+        </item>
+        <item name="android:textSize">@dimen/activity_jobseeker_details_title_textsize</item>
+        <item name="android:layout_marginLeft">@dimen/activity_jobseeker_details_title_margin
+        </item>
+        <item name="android:layout_marginRight">
+            @dimen/activity_jobseeker_details_info_margin
+        </item>
+        <item name="android:layout_toRightOf">@+id/jobseeker_details_jobseeker_image</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/company_profile_name_color</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="jobseeker_details_item_detail">
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textSize">@dimen/activity_jobseeker_details_detail_textsize</item>
+        <item name="android:layout_marginLeft">@dimen/activity_jobseeker_details_title_margin
+        </item>
+        <item name="android:layout_marginRight">
+            @dimen/activity_jobseeker_details_info_margin
+        </item>
+        <item name="android:layout_marginTop">
+            @dimen/activity_jobseeker_details_detail_topmargin
+        </item>
+        <item name="android:layout_toRightOf">@+id/jobseeker_details_jobseeker_image</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    t
+
+    <style name="NoActionBarTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="NoActionBarTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--QuickBlox-->
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+    <style name="ChatActivityTheme" parent="NoActionBarTheme">
+        <item name="android:windowBackground">@color/background_chat_color</item>
+    </style>
+
+    <style name="AppTheme.BlueAccent">
+        <item name="colorAccent">@color/color_blue_qb</item>
+    </style>
+
+
+
+    <!--calling styles-->
+
+
+
+
+    <style name="CallerAvatar">
+        <item name="android:layout_width">@dimen/call_avatar_diameter</item>
+        <item name="android:layout_height">@dimen/call_avatar_diameter</item>
+        <item name="android:padding">24dp</item>
+        <item name="android:src">@mipmap/ic_person_big</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="RoundedImageButton">
+        <item name="android:layout_width">@dimen/call_buttons_diameter</item>
+        <item name="android:layout_height">@dimen/call_buttons_diameter</item>
+        <item name="android:padding">@dimen/call_buttons_padding</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="EndCallImageButton" parent="RoundedImageButton">
+        <item name="android:background">@drawable/selector_call_end</item>
+        <item name="android:src">@mipmap/ic_phone_hangup</item>
+    </style>
+
+    <style name="TakeCallImageButton" parent="RoundedImageButton">
+        <item name="android:background">@drawable/selector_call_take</item>
+    </style>
+
+    <style name="ToolbarStyleCall" parent="Widget.AppCompat.Toolbar">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
+    </style>
+
+
+    <style name="SeekBarPreferenceTitle" parent="WrapContent">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

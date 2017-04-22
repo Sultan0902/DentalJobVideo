@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_jobs"
+            android:icon="@drawable/menu_jobs"
+            android:title="Jobs" />
+        <item
+            android:id="@+id/nav_company_profile"
+            android:icon="@drawable/menu_company_profile"
+            android:title="Company Profile" />
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/menu_messages"
+            android:title="Messages" />
+        <item
+            android:id="@+id/nav_hidden_resume"
+            android:icon="@drawable/menu_hidden_resume"
+            android:title="Hidden Resume"
+            />
+        <item
+            android:id="@+id/nav_manage_videos"
+            android:icon="@drawable/menu_manage_video"
+            android:title="Manage Videos" />
+        <item
+            android:id="@+id/nav_top5"
+            android:icon="@drawable/menu_top5"
+            android:title="Top 5" />
+        <item
+            android:id="@+id/nav_job_seeker"
+            android:icon="@drawable/menu_job_seeker"
+            android:title="Job Seeker" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/menu_settings"
+            android:title="Settings" />
+
+    </group>
+
+
+
+</menu>

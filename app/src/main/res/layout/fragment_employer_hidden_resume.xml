@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.vishant.DentalJobVideo.fragment.employer.HiddenResumeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/fragment_header"
+            layout="@layout/fragment_header_layout" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/hidden_resume_recyclerview_swipeRefresh"
+            android:layout_below="@+id/fragment_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/hidden_resume_employeer_recyclerview"
+            android:layout_width="match_parent"
+            android:background="@mipmap/dark_bg"
+            android:layout_marginBottom="@dimen/fragment_jobseeker_rv_bottommargin"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+</FrameLayout>

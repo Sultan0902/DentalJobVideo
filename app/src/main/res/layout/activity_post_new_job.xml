@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_new_job"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.vishant.DentalJobVideo.activity.employeer.PostNewJobActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/top_header"
+            layout="@layout/top_header_layout" />
+
+        <RelativeLayout
+            android:id="@+id/employer_jobs_button_layout"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_employer_job_button_leftmargin"
+            android:layout_marginRight="@dimen/fragment_employer_job_button_leftmargin"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent">
+            <Button
+                android:id="@+id/employer_job_post_video_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment_employer_job_button_height"
+                android:background="@mipmap/post_job_video"/>
+            <Button
+                android:id="@+id/employer_job_post_text_btn"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragment_employer_job_button_topmargin"
+                android:layout_below="@+id/employer_job_post_video_btn"
+                android:layout_height="@dimen/fragment_employer_job_button_height"
+                android:background="@mipmap/post_job_text"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

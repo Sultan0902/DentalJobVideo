@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_profile_objective"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.vishant.DentalJobVideo.activity.job_seeker.AddProfileObjectiveActivity">
+    <include layout="@layout/top_header_layout"
+        android:id="@+id/top_header"></include>
+    <TextView
+        android:id="@+id/objective_title"
+        android:layout_marginTop="@dimen/activity_objectives_title_topmargin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/objective_add_title"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/activity_objectives_title_textsize"
+        android:layout_below="@+id/top_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/objective_objective_field"
+        android:background="@mipmap/text_field"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/activity_objectives_field_textsize"
+        android:paddingLeft="@dimen/login_field_left_padding"
+        android:paddingRight="@dimen/login_field_left_padding"
+        android:textColorHint="@color/login_text_hint_color"
+        android:hint="@string/objective_hint"
+        android:layout_below="@+id/objective_title"
+        android:layout_marginRight="@dimen/activity_objectives_field_margin"
+        android:layout_marginLeft="@dimen/activity_objectives_field_margin"
+        android:layout_marginTop="@dimen/activity_objectives_field_topmargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_objectives_field_height" />
+    <Button
+        android:id="@+id/objective_submit_button"
+        android:background="@mipmap/submit"
+        android:layout_below="@+id/objective_objective_field"
+        android:layout_marginRight="@dimen/activity_objectives_field_margin"
+        android:layout_marginLeft="@dimen/activity_objectives_field_margin"
+        android:layout_marginTop="@dimen/activity_objectives_button_topmargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_objectives_button_height" />
+    <TextView
+        android:id="@+id/objective_delete_button"
+        android:layout_below="@+id/objective_submit_button"
+        android:text="@string/experience_delete_text"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_objectives_button_topmargin"
+        android:textSize="@dimen/activity_objectives_title_textsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_profile_experience"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.vishant.DentalJobVideo.activity.job_seeker.AddProfileExperienceActivity">
+    <include layout="@layout/top_header_layout"
+        android:id="@+id/top_header"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/top_header"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:paddingBottom="@dimen/activity_experience_button_topmargin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/experience_title"
+        android:layout_marginTop="@dimen/activity_objectives_title_topmargin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/experience_add_title"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/activity_experience_title_textsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/experience_jobtitle_field"
+        android:background="@mipmap/text_field"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/activity_experience_field_textsize"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/login_field_left_padding"
+        android:paddingRight="@dimen/login_field_left_padding"
+        android:textColorHint="@color/login_text_hint_color"
+        android:hint="@string/experience_jobtitle_hint"
+        android:layout_below="@+id/experience_title"
+        android:layout_marginRight="@dimen/activity_experience_field_margin"
+        android:layout_marginLeft="@dimen/activity_experience_field_margin"
+        android:layout_marginTop="@dimen/activity_experience_field_topmargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_experience_field_height" />
+    <EditText
+        android:id="@+id/experience_company_field"
+        android:background="@mipmap/text_field"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/activity_objectives_field_textsize"
+        android:paddingLeft="@dimen/login_field_left_padding"
+        android:singleLine="true"
+        android:paddingRight="@dimen/login_field_left_padding"
+        android:textColorHint="@color/login_text_hint_color"
+        android:hint="@string/experience_company_hint"
+        android:layout_below="@+id/experience_jobtitle_field"
+        android:layout_marginRight="@dimen/activity_experience_field_margin"
+        android:layout_marginLeft="@dimen/activity_experience_field_margin"
+        android:layout_marginTop="@dimen/activity_experience_field_topmargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_experience_field_height" />
+    <TextView
+        android:id="@+id/experience_location_field"
+        android:background="@mipmap/text_field"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/activity_experience_field_textsize"
+        android:paddingLeft="@dimen/login_field_left_padding"
+        android:paddingRight="@dimen/login_field_left_padding"
+        android:gravity="center_vertical"
+        android:textColorHint="@color/login_text_hint_color"
+        android:hint="@string/experience_location_hint"
+        android:layout_below="@+id/experience_company_field"
+        android:layout_marginRight="@dimen/activity_experience_field_margin"
+        android:layout_marginLeft="@dimen/activity_experience_field_margin"
+        android:layout_marginTop="@dimen/activity_experience_field_topmargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_experience_field_height" />
+    <LinearLayout
+        android:id="@+id/experience_period_layout"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/activity_experience_field_margin"
+        android:layout_marginLeft="@dimen/activity_experience_field_margin"
+        android:layout_below="@+id/experience_location_field"
+        android:layout_height="@dimen/activity_experience_field_height"
+        android:layout_marginTop="@dimen/activity_experience_field_topmargin"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/experience_period_from_field"
+            android:background="@mipmap/text_field"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:gravity="center_vertical"
+            android:textColor="@color/login_text_color"
+            android:layout_marginRight="@dimen/activity_experience_yearfield_margin"
+            android:textSize="@dimen/activity_experience_field_textsize"
+            android:paddingLeft="@dimen/login_field_left_padding"
+            android:paddingRight="@dimen/login_field_left_padding"
+            android:textColorHint="@color/login_text_hint_color"
+            android:hint="@string/experience_from_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/experience_period_to_field"
+            android:background="@mipmap/text_field"
+            android:layout_marginLeft="@dimen/activity_experience_yearfield_margin"
+            android:gravity="center_vertical"
+            android:textColor="@color/login_text_color"
+            android:inputType="number"
+            android:textSize="@dimen/activity_experience_field_textsize"
+            android:paddingLeft="@dimen/login_field_left_padding"
+            android:paddingRight="@dimen/login_field_left_padding"
+            android:textColorHint="@color/login_text_hint_color"
+            android:hint="@string/experience_to_hint"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/experience_currently_work_layout"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/activity_experience_field_margin"
+        android:layout_marginLeft="@dimen/activity_experience_field_margin"
+        android:layout_below="@+id/experience_period_layout"
+        android:layout_height="@dimen/activity_experience_field_height"
+        android:layout_marginTop="@dimen/activity_experience_field_topmargin"
+        android:orientation="horizontal">
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/experience_currently_work_switch"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/login_field_left_padding"
+        android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/experience_currently_work_text"
+            android:textColor="@color/login_text_color"
+            android:text="@string/experience_currently_working"
+            android:textSize="@dimen/activity_experience_title_textsize"
+            android:layout_marginLeft="@dimen/login_field_left_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+            <EditText
+                android:id="@+id/experience_desc_field"
+                android:background="@mipmap/text_field"
+                android:textColor="@color/login_text_color"
+                android:textSize="@dimen/activity_experience_field_textsize"
+                android:paddingTop="@dimen/signup_field_large_toppadding"
+                android:paddingLeft="@dimen/login_field_left_padding"
+                android:gravity="top"
+                android:paddingRight="@dimen/login_field_left_padding"
+                android:textColorHint="@color/login_text_hint_color"
+                android:hint="@string/experience_desc_hint"
+                android:layout_below="@+id/experience_currently_work_layout"
+                android:layout_marginRight="@dimen/activity_experience_field_margin"
+                android:layout_marginLeft="@dimen/activity_experience_field_margin"
+                android:layout_marginTop="@dimen/activity_experience_field_topmargin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_experience_desc_height" />
+    <Button
+        android:id="@+id/experience_submit_button"
+        android:background="@mipmap/submit"
+        android:layout_below="@+id/experience_desc_field"
+        android:layout_marginRight="@dimen/activity_experience_field_margin"
+        android:layout_marginLeft="@dimen/activity_experience_field_margin"
+        android:layout_marginTop="@dimen/activity_experience_button_topmargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_experience_button_height" />
+
+            <TextView
+                android:id="@+id/experience_delete_button"
+                android:layout_below="@+id/experience_submit_button"
+                android:text="@string/experience_delete_text"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_experience_button_topmargin"
+                android:textSize="@dimen/activity_experience_title_textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

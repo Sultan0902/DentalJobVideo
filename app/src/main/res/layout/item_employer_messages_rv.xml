@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@mipmap/dark_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fragment_jobseeker_rv_item_hieght">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/item_rv_employeer_message_image"
+        android:layout_width="@dimen/fragment_jobseeker_rv_item_image_width"
+        android:layout_height="@dimen/fragment_jobseeker_rv_item_image_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/fragment_jobseeker_rv_item_detail_leftmargin"
+        android:background="@mipmap/ic_img_active"/>
+    <TextView
+        android:id="@+id/item_rv_employeer_message_title"
+        android:text="User Name"
+        style="@style/messages_rv_item_title"
+         />
+    <TextView
+        android:id="@+id/item_rv_employeer_message_detail"
+        android:layout_below="@+id/item_rv_employeer_message_title"
+        android:text="Category"
+        style="@style/messages_rv_item_detail"
+         />
+    </RelativeLayout>
+
+</RelativeLayout>

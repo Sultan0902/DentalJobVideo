@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_post_text_job"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.vishant.DentalJobVideo.activity.employeer.PostTextJobActivity">
+
+    <include layout="@layout/top_header_layout"
+        android:id="@+id/top_header"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/activity_post_text_job_info_layout_topmargin"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_header">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/job_info_layout"
+        android:background="@mipmap/dark_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_post_text_job_info_layout_height">
+        <RelativeLayout
+            android:id="@+id/job_image_title_layout"
+            android:layout_marginTop="@dimen/activity_post_text_job_info_layout_toppadding"
+            android:layout_marginLeft="@dimen/activity_post_text_job_info_layout_margin"
+            android:layout_marginRight="@dimen/activity_post_text_job_info_layout_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/job_image_layout"
+                android:layout_width="@dimen/activity_post_video_job_info_image_size"
+                android:layout_height="@dimen/activity_post_video_job_info_image_size">
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/job_image"
+                    android:layout_margin="@dimen/signup_image_padding"
+                    app:civ_border="false"
+                    app:civ_border_width="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:id="@+id/job_image_holder"
+                    android:background="@mipmap/ic_image_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/job_title_label"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_post_video_job_info_title_text_leftmargin"
+                android:layout_toRightOf="@+id/job_image_layout"
+                android:textSize="@dimen/activity_post_video_job_info_title_field_textsize"
+                android:text="@string/job_video_title_text"
+                android:textColor="@color/login_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/job_title_field_ed"
+                android:layout_toRightOf="@+id/job_title_label"
+                style="@style/post_job_title_edittext" />
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/job_desc_field_ed"
+            android:layout_below="@+id/job_image_title_layout"
+            style="@style/post_job_desc_edittext"
+            />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/job_text_experience"
+        android:layout_below="@+id/job_info_layout"
+        android:hint="@string/job_text_experience_hint"
+        style="@style/post_job_fields_edittext"/>
+    <EditText
+        android:id="@+id/job_text_education"
+        android:hint="@string/job_text_educated_hint"
+        android:layout_below="@+id/job_text_experience"
+        style="@style/post_job_fields_edittext"/>
+    <TextView
+        android:id="@+id/job_text_date_of_joining"
+        android:hint="@string/job_text_joining_date_hint"
+        android:layout_below="@+id/job_text_education"
+        style="@style/post_job_fields_edittext"/>
+    <EditText
+        android:id="@+id/job_text_salary"
+        android:hint="@string/job_text_salary_hint"
+        android:layout_below="@+id/job_text_date_of_joining"
+        style="@style/post_job_fields_edittext"/>
+    <TextView
+        android:id="@+id/job_text_place"
+        android:hint="@string/job_text_place_hint"
+        android:layout_below="@+id/job_text_salary"
+        style="@style/post_job_fields_edittext"/>
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/job_text_category"
+        android:prompt="@string/job_text_category_hint"
+        android:hint="@string/job_text_category_hint"
+        android:layout_marginTop="@dimen/activity_post_text_input_field_topmargin"
+        android:layout_marginLeft="@dimen/activity_post_text_input_field_margin"
+        android:layout_marginRight="@dimen/activity_post_text_input_field_margin"
+        android:layout_below="@+id/job_text_place"
+        android:background="@mipmap/dropdown_feild_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_post_text_input_field_height"></android.support.v7.widget.AppCompatSpinner>
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

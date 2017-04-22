@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@mipmap/dark_bg"
+    android:paddingTop="@dimen/fragment_top5_employeer_rv_item_top_padding"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fragment_top5_employeer_rv_item_hieght">
+
+    <ImageView
+        android:id="@+id/item_rv_top5_image"
+        android:layout_width="@dimen/fragment_top5_employeer_rv_item_image_width"
+        android:layout_height="@dimen/fragment_top5_employeer_rv_item_image_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/fragment_top5_employeer_rv_item_image_leftmargin"
+        android:background="@mipmap/ic_img_active"/>
+    <TextView
+        android:id="@+id/item_rv_top5_title"
+        android:text="User Name"
+        style="@style/top5_rv_item_title"
+         />
+    <TextView
+        android:id="@+id/item_rv_top5_category"
+        android:layout_below="@+id/item_rv_top5_title"
+        android:text="Category"
+        style="@style/top5_rv_item_detail"
+         />
+    <TextView
+        android:id="@+id/item_rv_top5_company"
+        android:text="Company"
+        android:layout_below="@+id/item_rv_top5_category"
+        style="@style/top5_rv_item_detail"
+         />
+    <RatingBar
+        android:id="@+id/item_rv_top5_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fragment_top5_employeer_rv_item_rating_icon_size"
+        android:layout_marginRight="@dimen/fragment_top5_employeer_rv_item_rating_rightmargin"
+        android:layout_alignParentRight="true"
+        android:numStars="@integer/job_posted_rating_totalrating"
+        android:stepSize="@integer/job_posted_rating_ratingstep"
+        android:maxHeight="@dimen/fragment_top5_employeer_rv_item_rating_icon_size"
+        android:minHeight="@dimen/fragment_top5_employeer_rv_item_rating_icon_size"
+        style="?android:attr/ratingBarStyleSmall"
+        android:progressDrawable="@drawable/rating_drawable"
+        android:layout_marginTop="@dimen/fragment_top5_employeer_rv_item_rating_topmargin"
+        android:rating="3"/>
+
+</RelativeLayout>

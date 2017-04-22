@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/header_layout_topmargin"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_layout_height">
+
+    <Button
+        android:id="@+id/header_back_btn"
+        android:background="@mipmap/ic_back"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/header_padding"
+        android:layout_width="@dimen/header_layout_backbutton_size"
+        android:layout_alignParentLeft="true"
+        android:layout_height="@dimen/header_layout_backbutton_size" />
+
+    <TextView
+        android:id="@+id/header_title_text"
+        android:text="@string/signup_title"
+        android:textStyle="bold"
+        android:textColor="@color/signup_text_color"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/header_textsize"
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/header_next_text"
+        android:text="@string/header_next_text"
+        android:textColor="@color/header_text_color"
+        android:textSize="@dimen/header_next_textsize"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/header_padding"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/header_apply_text"
+        android:text="@string/header_apply_text"
+        android:textColor="@color/header_text_color"
+        android:textSize="@dimen/header_next_textsize"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/header_padding"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+ <TextView
+        android:id="@+id/header_done_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/header_padding"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/header_next_textsize"
+        android:textColor="@color/header_text_color"
+        android:text="@string/header_done_text"
+     android:visibility="gone"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/header_edit_btn"
+        android:background="@mipmap/ic_edit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/header_padding"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/header_edit_icon_size"
+        android:layout_height="@dimen/header_edit_icon_size"
+        android:visibility="gone"/>
+</RelativeLayout>

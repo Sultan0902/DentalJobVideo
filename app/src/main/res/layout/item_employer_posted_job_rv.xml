@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/acitivity_posted_job_employeer_rv_item_hieght">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/item_rv_employeer_posted_job_image"
+        android:layout_width="@dimen/acitivity_posted_job_employeer_rv_item_image_width"
+        android:layout_height="@dimen/acitivity_posted_job_employeer_rv_item_image_height"
+        app:civ_border_width="0dp"
+        app:civ_border="false"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/acitivity_posted_job_employeer_rv_item_image_leftmargin"/>
+    <TextView
+        android:id="@+id/item_rv_employeer_posted_job_title"
+        android:text="User Name"
+        style="@style/posted_job_rv_item_title"
+         />
+    <TextView
+        android:id="@+id/item_rv_employeer_posted_job_category"
+        android:layout_below="@+id/item_rv_employeer_posted_job_title"
+        android:text="Category"
+        style="@style/posted_job_rv_item_detail"
+         />
+    <TextView
+        android:id="@+id/item_rv_employeer_posted_job_company"
+        android:text="Company"
+        android:layout_below="@+id/item_rv_employeer_posted_job_category"
+        style="@style/posted_job_rv_item_detail"
+         />
+    <RatingBar
+        android:id="@+id/item_rv_employeer_posted_job_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/acitivity_posted_job_employeer_rv_item_rating_icon_size"
+        android:layout_marginRight="@dimen/acitivity_posted_job_employeer_rv_item_rating_rightmargin"
+        android:layout_alignParentRight="true"
+        android:numStars="@integer/job_posted_rating_totalrating"
+        android:stepSize="@integer/job_posted_rating_ratingstep"
+        android:maxHeight="@dimen/acitivity_posted_job_employeer_rv_item_rating_icon_size"
+        android:minHeight="@dimen/acitivity_posted_job_employeer_rv_item_rating_icon_size"
+        style="?android:attr/ratingBarStyleSmall"
+        android:progressDrawable="@drawable/rating_drawable"
+        android:layout_marginTop="@dimen/acitivity_posted_job_employeer_rv_item_rating_topmargin"
+        android:rating="3"/>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+//// for development purpose
+////
+
+/*
+
+include ':quickblox-android-sdk-chat-extensions'
+project(':quickblox-android-sdk-chat-extensions').projectDir = new File( '../SDK-android/quickblox-android-sdk-chat-extensions')
+*/
+
+/*include ':jbosh'
+project(':jbosh').projectDir = new File( '../SDK-android/jbosh')*/
+
+
+
+include ':quickblox-android-sdk-core'
+project(':quickblox-android-sdk-core').projectDir = new File('../SDK-android/quickblox-android-sdk-core')
+
+/*include ':quickblox-android-sdk-customobjects'
+project(':quickblox-android-sdk-customobjects').projectDir = new File( '../SDK-android/quickblox-android-sdk-customobjects')
+
+include ':quickblox-android-sdk-location'
+project(':quickblox-android-sdk-location').projectDir = new File('../SDK-android/quickblox-android-sdk-location')*/
+
+

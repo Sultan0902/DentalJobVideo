@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "331960019001",
+    "firebase_url": "https://dentaljobvideo-162505.firebaseio.com",
+    "project_id": "dentaljobvideo-162505",
+    "storage_bucket": "dentaljobvideo-162505.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331960019001:android:f6dd9ea3ecbbf2ca",
+        "android_client_info": {
+          "package_name": "com.vishant.DentalJobVideo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331960019001-e2f8ko3dkos0nbr4ml2iu8hpo6e5k9gf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vishant.DentalJobVideo",
+            "certificate_hash": "c25e283813463a7e4c995190467167f04b8e7b9b"
+          }
+        },
+        {
+          "client_id": "331960019001-ndg7ai61btoi2es6utgfgrfmvq05hsoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0AKfL7JY7IqnvQSkhEPToTf20yWeLnZ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331960019001-ndg7ai61btoi2es6utgfgrfmvq05hsoo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

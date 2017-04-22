@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/login_field_textsize"
+    android:gravity="left"
+    android:lines="1"
+    android:paddingRight="@dimen/login_field_left_padding"
+    android:text="@string/login_spinner_text"
+    android:textColor="@color/login_text_color"
+    />

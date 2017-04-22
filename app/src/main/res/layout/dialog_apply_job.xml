@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@mipmap/pop_up"
+    android:layout_width="@dimen/apply_job_dialog_width"
+    android:layout_height="@dimen/apply_job_dialog_height">
+
+    <TextView
+        android:id="@+id/apply_job_header_title"
+        android:textColor="@color/header_text_color"
+        android:layout_centerHorizontal="true"
+        android:text="@string/apply_job_header_title"
+        android:layout_marginTop="@dimen/change_password_header_topmargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/apply_job_header_confirmation"
+        android:textColor="@color/header_text_color"
+        android:lines="2"
+        android:minLines="2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/apply_job_header_title"
+        android:text="@string/apply_job_confirmation"
+        android:layout_marginTop="@dimen/change_password_header_topmargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/apply_job_button_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/pop_up_button"
+        android:layout_height="@dimen/change_password_button_height">
+        <TextView
+            android:id="@+id/apply_job_button_yes"
+            android:layout_alignParentLeft="true"
+            android:text="@string/apply_job_yes"
+            android:gravity="center"
+            android:textSize="@dimen/change_password_button_text_size"
+            android:layout_width="@dimen/change_password_button_width"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/apply_job_button_no"
+            android:text="@string/apply_job_no"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/change_password_button_text_size"
+            android:layout_width="@dimen/change_password_button_width"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/change_password_button_seperator"
+            android:background="@mipmap/button_seperator"
+            android:layout_width="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

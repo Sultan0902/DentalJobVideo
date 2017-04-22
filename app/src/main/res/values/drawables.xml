@@ -1,0 +1,14 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_jobs" type="drawable">@drawable/menu_jobs</item>
+    <item name="ic_menu_company_profile" type="drawable">@drawable/menu_company_profile</item>
+    <item name="ic_menu_messages" type="drawable">@drawable/menu_messages</item>
+    <item name="ic_menu_hidden_resume" type="drawable">@drawable/menu_hidden_resume</item>
+    <item name="ic_menu_manage_videos" type="drawable">@drawable/menu_manage_video</item>
+    <item name="ic_menu_settings" type="drawable">@drawable/menu_settings</item>
+    <item name="ic_menu_top5" type="drawable">@drawable/menu_top5</item>
+    <item name="ic_menu_job_search" type="drawable">@drawable/menu_job_search</item>
+    <item name="ic_menu_my_jobs" type="drawable">@drawable/menu_myjobs</item>
+    <item name="ic_menu_view_profile" type="drawable">@drawable/menu_view_profile</item>
+    <item name="ic_menu_bookmark" type="drawable">@drawable/menu_bookmark</item>
+
+</resources>

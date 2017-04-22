@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@mipmap/dark_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/notification_activity_notification_item_height">
+    <TextView
+        android:id="@+id/notification_name"
+        android:textColor="@color/company_profile_name_color"
+        android:text="Name"
+        android:layout_marginTop="@dimen/notification_activity_notification_item_name_topmargin"
+        android:layout_marginLeft="@dimen/notification_activity_notification_item_text_leftmargin"
+        android:layout_marginRight="@dimen/notification_activity_notification_item_text_rightmargin"
+        android:textSize="@dimen/notification_activity_notification_item_name_textsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/notification_message"
+        android:textColor="@color/company_profile_field_color"
+        android:text="@string/company_profile_description_hint"
+        android:lines="2"
+        android:layout_below="@+id/notification_name"
+        android:layout_marginTop="@dimen/notification_activity_notification_item_text_topmargin"
+        android:layout_marginRight="@dimen/notification_activity_notification_item_text_rightmargin"
+        android:layout_marginLeft="@dimen/notification_activity_notification_item_text_leftmargin"
+        android:textSize="@dimen/notification_activity_notification_item_text_textsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/notification_time"
+        android:textColor="@color/company_profile_name_color"
+        android:text="2hrs"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/notification_activity_notification_item_time_topmargin"
+        android:layout_marginRight="@dimen/notification_activity_notification_item_time_rightmargin"
+        android:textSize="@dimen/notification_activity_notification_item_time_textsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
